@@ -1431,9 +1431,6 @@ form label {
 }
 
 .request-position {
-    background: url(../img/request-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -1441,16 +1438,16 @@ form label {
     height: 100%;
 }
 
-/* .request-position1 {
+.request-position1 {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 2;
-} */
+} 
 
-/* .request-position1-2 {
+.request-position1-2 {
     background: url(../img/Noise.png);
     background-repeat: repeat;
     background-size: auto;
@@ -1464,12 +1461,7 @@ form label {
 }
 
 .request-position1-1 {
-    width: 100%;
-    height: 1919.85px;
-    transform: rotate(-90deg);
-    flex-shrink: 0;
-    background: linear-gradient(194deg, rgba(253, 230, 20, 0.40) 0%, rgba(253, 230, 20, 0.00) 47.92%, rgba(241, 132, 25, 0.40) 100%);
-    filter: blur(125px);
+   
     position: absolute;
     left: 0;
     top: 128px;
@@ -1482,7 +1474,7 @@ form label {
     top:-58px;
     z-index: 1;
     opacity: 0.75;
-mix-blend-mode: color-burn;
+    mix-blend-mode: color-burn;
 }
 
 .request-position3 {
@@ -1492,7 +1484,7 @@ mix-blend-mode: color-burn;
     z-index: 1;
     opacity: 0.75;
     mix-blend-mode: color-burn;
-} */
+} 
 .request-left {
     display: flex;
     width: 355px;
@@ -1783,7 +1775,7 @@ mix-blend-mode: color-burn;
 }
 
 .case-position {
-    background: url(../img/BGForExport.svg);
+    background: url(../img/Noise.png);
     background-repeat: repeat;
     background-size: auto;
     position: absolute;
@@ -1791,6 +1783,13 @@ mix-blend-mode: color-burn;
     height: 100%;
     left: 0;
     top: 0;
+}
+.case-position svg{
+    width: 100%;
+    height: 100%;
+}
+.feedback-position svg {
+    height: inherit;
 }
 
 .case-left-tittle {
