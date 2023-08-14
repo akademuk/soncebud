@@ -1460,58 +1460,44 @@ form label {
     width: 100%;
     height: 100%;
 }
-
 .request-position1 {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
-} 
-
-.request-position1-2 {
+}
+.request-position2 {
     background: url(../img/Noise.png);
     background-repeat: repeat;
     background-size: auto;
     position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
+    left: 0;
+    top: 0;
     opacity: 0.25;
     mix-blend-mode: color-burn;
-    z-index: 2;
-}
-
-.request-position1-1 {
-    z-index: 1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.request-position2 {
-    position: absolute;
-    height: 939px;
-    right: 0;
-    top:-58px;
-    z-index: 1;
-    mix-blend-mode: color-burn;
     z-index: 3;
 }
-
 .request-position3 {
     position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.15;
+mix-blend-mode: color-burn;
+width: 834.511px;
+height: 823px;
+}
+.request-position4 {
+    position: absolute;
+    bottom: 0;
     left: 0;
-    top: 70px;
-    z-index: 1;
-    opacity: 0.75;
+    opacity: 0.15;
     mix-blend-mode: color-burn;
-    z-index: 3;
-} 
+    width: 834.511px;
+    height: 823px;
+}
 .request-left {
     display: flex;
     width: 355px;
@@ -2121,14 +2107,14 @@ form label {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200%;
+    height: 100%;
 }
 .argument-position1 {
     position: absolute;
-    top: -64%;
+    top: -86%;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 150%;
     mix-blend-mode: color-burn;
 }
 .argument-position1 svg {
@@ -2202,7 +2188,6 @@ form label {
     gap: 24px;
     align-self: stretch;
 }
-
 .argument-box-left {
     display: flex;
     max-width: 1116px;
@@ -2216,7 +2201,7 @@ form label {
     overflow: hidden;
 }
 
-.argument-box-left {
+.argument-box-left img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2228,7 +2213,7 @@ form label {
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 24px;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
@@ -2359,6 +2344,9 @@ form label {
     top: 0;
     left: 0;
     z-index: 2; 
+}
+.about-us-position1 svg {
+    width: 100%;
 }
 .about-us-position2 {
     position: absolute;
@@ -3391,6 +3379,20 @@ footer {
 }
 
 .footer-position {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.footer-position1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.footer-position2 {
     background: url(../img/Noise.png);
     background-repeat: repeat;
     background-size: auto;
@@ -3403,7 +3405,6 @@ footer {
     mix-blend-mode: color-burn;
     z-index: 3;
 }
-
 .footer-content {
     display: flex;
     width: 1116px;
