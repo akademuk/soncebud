@@ -1,28 +1,30 @@
 $(document).ready(function () {
-    var itemsToShow = 3; // Number of items to show on each click
-    var currentIndex = 0;
+    if (window.innerWidth >= 1200) {
+        var itemsToShow = 3; // Number of items to show on each click
+        var currentIndex = 0;
 
-    function showItems() {
-        var $sliderItems = $('.case-box-slider-item');
-        var totalItems = $sliderItems.length;
+        function showItems() {
+            var $sliderItems = $('.case-box-slider-item');
+            var totalItems = $sliderItems.length;
 
-        for (var i = currentIndex; i < currentIndex + itemsToShow; i++) {
-            if (i >= totalItems) {
-                break;
+            for (var i = currentIndex; i < currentIndex + itemsToShow; i++) {
+                if (i >= totalItems) {
+                    break;
+                }
+                $sliderItems.eq(i).addClass('visible');
             }
-            $sliderItems.eq(i).addClass('visible');
+
+            currentIndex += itemsToShow;
+
+            if (currentIndex >= totalItems) {
+                $('.case-box-btn').hide();
+            }
         }
 
-        currentIndex += itemsToShow;
+        $('.case-box-btn').on('click', function () {
+            showItems();
+        });
 
-        if (currentIndex >= totalItems) {
-            $('.case-box-btn').hide();
-        }
+        showItems(); // Show initial items
     }
-
-    $('.case-box-btn').on('click', function () {
-        showItems();
-    });
-
-    showItems(); // Show initial items
 });
