@@ -6121,4 +6121,43 @@ flex: 1 0 0;
     .certificates {
         overflow: visible;
     }
+    .argument {
+        overflow: hidden;
+    }
+    .about-us {
+        overflow: hidden;
+    }
+    .certificates {
+        overflow: hidden;
+    }
+    .steps {
+        overflow: hidden;
+    }
+    .footer-content-left {
+        flex-wrap: wrap;
+    }
+    .footer-content-left-nav {
+        gap: 32px;
+    }
+    .footer-content-left {
+        gap: 48px;
+    }
+    .feedback-item {
+        padding-top: 23px;
+    }
+    .about-us-left-tittle-logo-img img {
+        height: 35px;
+        object-fit: cover;
+        object-position: left;
+    }
+    .case-left-tittle-img img {
+        height: 35px;
+        object-fit: cover;
+        object-position: left;
+    }
+    .steps-left-top-img img {
+        height: 35px;
+        object-fit: cover;
+        object-position: left;
+    }
 }
