@@ -5615,13 +5615,9 @@ line-height: 150%; /* 24px */
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #333;
-        color: #fff;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 20px;
-        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
       }
       
       .burger-icon {
@@ -5660,6 +5656,20 @@ line-height: 150%; /* 24px */
         padding: 20px;
         transition: all 0.5s;
       }
+      .sub-menu2.open {
+        display: block !important;
+
+      } 
+      .drop-down-menu ul li {
+        text-align: center;
+        justify-content: center;
+      }
+      .sub-menu2 .modal-img2 {
+        display: block !important;
+      }
+      .main-menu .header-navs li {
+        margin-right: 0 !important;
+      }
       .sub-menu.open {
         transform: translateX(0);
         background: blue;
@@ -5693,7 +5703,8 @@ line-height: 150%; /* 24px */
      .burger-menu {
         transform: translateY(-100%);
         display: flex;
-        width: 375px;
+        max-width: 375px;
+        width: 100%;
         height: 812px;
         min-width: 320px;
         max-width: 1199px;
@@ -5706,11 +5717,13 @@ line-height: 150%; /* 24px */
         margin-left: auto;
         right: 0;
         left: auto;
+        z-index: 100;
       }
       .burger-menu.open {
-        transform: translateY(64px);
+        transform: translateY(62px);
         z-index: 100;
         height: 812px;
+        background: #fff;
         transition: all 0.5s;
       }
       .burger-icon.open .bar:nth-child(2) {
@@ -5840,7 +5853,8 @@ line-height: 150%; /* 24px */
         display: none;
     }
     .sub-menu {
-        width: 375px;
+        max-width: 375px;
+        width: 100%;
         right: 0;
         z-index: 222;
     }
@@ -5916,6 +5930,31 @@ line-height: 150%; /* 24px */
         gap: 16px;
         flex: 1 0 0;
         flex-wrap: wrap;
+    }
+    .sub-menu .close-submenu {
+        display: none;
+    }
+    .sub-menu.open {
+        transition: all 0.7s;
+    }
+    footer .sub-menu.open{
+        display: none;
+    }
+    .modal-img {
+        width: 100%;
+    }
+    .modal-img img {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .modal-img {
+        margin-bottom: 23px;
+    }
+    .drop-down-menu ul li img{
+        display: none;
+    }
+    .drop-down-menu ul li {
+        text-align: center;
     }
     .request-right {
         width: 100%;
@@ -6036,6 +6075,9 @@ flex: 1 0 0;
     }
     .steps {
         overflow: visible;
+    }
+    .burger-menu .sub-menu .close-submenu {
+        display: block;
     }
 }
 @media (max-width: 768px) {

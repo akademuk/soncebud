@@ -18,16 +18,16 @@
         <div class="main-menu">
             <ul class="header-navs">
                 <li>
-                    <a href="#">Етапи співпраці</a>
+                    <a href="#" class="btn-link">Етапи співпраці</a>
                 </li>
                 <li>
-                    <a href="#">Прорахунок</a>
+                    <a href="#" class="btn-link">Прорахунок</a>
                 </li>
                 <li>
-                    <a href="#">Реалізовані об'єкти</a>
+                    <a href="#" class="btn-link">Реалізовані об'єкти</a>
                 </li>
                 <li>
-                    <a href="#">Гарантії</a>
+                    <a href="#" class="btn-link">Гарантії</a>
                 </li>
             </ul>
             <a href="#advice" class="header-btn-button">
@@ -68,7 +68,8 @@
                 <ul>
                     <li>
                         <img src="img/location.svg" alt="вул. Пшенична, 8">
-                        Полтавська обл., <br> м. Полтава
+                        Полтавська обл., <br>
+                        вул. Сонячна, 17
                     </li>
                     <li>
                         <a href="tel:0505582442">+38 (050) 558 24 42</a>
@@ -79,7 +80,7 @@
                     <li>
                         <img src="img/location.svg" alt="вул. Пшенична, 8">
                         Одеська обл., <br>
-                        м. Одеса
+                        вул. Квіткова, 42B
                     </li>
                     <li>
                         <a href="tel:0977166874">+38 (097) 716 68 74</a>
@@ -1857,7 +1858,7 @@
     </section>
 
     <footer>
-        <div class="sub-menu">
+        <div class="sub-menu sub-menu2">
             <div class="drop-down-menu">
                 <div class="modal-img modal-img2">
                     <img src="img/modal-img.svg" alt="image">
@@ -2163,18 +2164,14 @@ $(document).ready(function() {
   $('.burger-icon').click(function() {
     $(this).toggleClass('open');
     $('.burger-menu').toggleClass('open');
+    $('.body').toggleClass('open');
+    $('.sub-menu').removeClass('open');
   });
 
   $('.submenu-trigger').click(function() {
     $('.sub-menu').toggleClass('open');
   });
-
-  $('.submenu-trigger').click(function() {
-    $('.body').toggleClass('open');
-  });
-
-
-  $('.burger-icon').click(function() {
+  $('.submenu-trigger2').click(function() {
     $('.body').toggleClass('open');
   });
 
@@ -2182,16 +2179,17 @@ $(document).ready(function() {
     $('.sub-menu').removeClass('open');
   });
 
-  $('.burger-icon').click(function() {
-    $('.sub-menu').removeClass('open');
-  });
-
-  $('.modal-img2 ').click(function() {
+  $('.modal-img2').click(function() {
     $('.body').removeClass('open');
   });
 
+  $('.btn-link').click(function() {
+    $('.burger-menu').removeClass('open');
+    $('.burger-icon').removeClass('open');
+    $('.body').removeClass('open');
+    $('.sub-menu').removeClass('open');
+  });
 });
-
 
     </script>
 </body>
