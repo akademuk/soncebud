@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -16,7 +13,83 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="body">
+    <div class="burger-menu">
+        <div class="main-menu">
+            <ul class="header-navs">
+                <li>
+                    <a href="#">Етапи співпраці</a>
+                </li>
+                <li>
+                    <a href="#">Прорахунок</a>
+                </li>
+                <li>
+                    <a href="#">Реалізовані об'єкти</a>
+                </li>
+                <li>
+                    <a href="#">Гарантії</a>
+                </li>
+            </ul>
+            <a href="#advice" class="header-btn-button">
+                Консультація
+                <img src="img/message.svg" alt="Консультація">
+            </a>
+            <div class="main-menu-flex">
+                <button class="submenu-trigger">м. Київ 
+                    <img src="img/modal2.svg" alt="м. Київ ">
+                </button>
+                <p>вул. Пшенична, 8</p>
+                <div class="footer-content-left-phone">
+                    <a href="tel:0971247150">+38 (097) 124 71 50</a>
+                    <a href="tel:0953111809">+38 (095) 311 18 09</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu">
+            <div class="drop-down-menu">
+                <div class="modal-img">
+                    <img src="img/modal-img.svg" alt="image">
+                    <h2>Контакти та представництва</h2>
+                </div>
+                <h4>київ</h4>
+                <ul>
+                    <li>
+                        <img src="img/location.svg" alt="вул. Пшенична, 8">
+                        вул. Пшенична, 8
+                    </li>
+                    <li>
+                        <a href="tel:0971247150">+38 (097) 124 71 50</a>
+                    </li>
+                    <li>
+                        <a href="tel:0953111809">+38 (095) 311 18 09</a>
+                    </li>
+                </ul>
+                <h4>полтава</h4>
+                <ul>
+                    <li>
+                        <img src="img/location.svg" alt="вул. Пшенична, 8">
+                        Полтавська обл., <br> м. Полтава
+                    </li>
+                    <li>
+                        <a href="tel:0505582442">+38 (050) 558 24 42</a>
+                    </li>
+                </ul>
+                <h4>одеса</h4>
+                <ul>
+                    <li>
+                        <img src="img/location.svg" alt="вул. Пшенична, 8">
+                        Одеська обл., <br>
+                        м. Одеса
+                    </li>
+                    <li>
+                        <a href="tel:0977166874">+38 (097) 716 68 74</a>
+                    </li>
+                </ul>
+            </div>
+          <button class="close-submenu"><img src="img/arrow.svg" alt=""></button>
+        </div>
+    </div>
+
     <div class="top-container">
         <div class="upper-band">
             <div class="content">
@@ -119,6 +192,11 @@
                         <img src="img/message.svg" alt="Консультація">
                     </a>
                 </div>
+                <div class="burger-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
             </div>
         </header>
     </div>
@@ -128,41 +206,49 @@
             <div class="hero-positon1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1441" height="857" viewBox="0 0 1441 857" fill="none">
                     <g opacity="0.15" filter="url(#filter0_f_318_9266)">
-                      <path d="M302.297 525.23C298.245 523.674 293.974 522.762 289.639 522.527C246.343 520.174 235.028 461.467 274.348 443.191L660.179 263.859C681.858 253.783 705.656 249.113 729.535 250.249L1140.88 269.823L1163.33 273.616C1211.31 281.722 1249.3 318.627 1258.79 366.355C1274.7 446.368 1206.06 517.767 1125.48 505.02L1068.74 496.043C1048.96 492.915 1028.77 493.591 1009.25 498.035L896.627 523.672C874.422 528.727 851.588 530.446 828.877 528.774L827.571 528.677C776.624 524.925 725.912 538.576 683.732 567.396C622.572 609.184 544.795 618.286 475.639 591.748L302.297 525.23Z" fill="url(#paint0_linear_318_9266)"/>
+                        <path
+                            d="M302.297 525.23C298.245 523.674 293.974 522.762 289.639 522.527C246.343 520.174 235.028 461.467 274.348 443.191L660.179 263.859C681.858 253.783 705.656 249.113 729.535 250.249L1140.88 269.823L1163.33 273.616C1211.31 281.722 1249.3 318.627 1258.79 366.355C1274.7 446.368 1206.06 517.767 1125.48 505.02L1068.74 496.043C1048.96 492.915 1028.77 493.591 1009.25 498.035L896.627 523.672C874.422 528.727 851.588 530.446 828.877 528.774L827.571 528.677C776.624 524.925 725.912 538.576 683.732 567.396C622.572 609.184 544.795 618.286 475.639 591.748L302.297 525.23Z"
+                            fill="url(#paint0_linear_318_9266)" />
                     </g>
                     <defs>
-                      <filter id="filter0_f_318_9266" x="0.21875" y="0.0820312" width="1510.88" height="856.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                        <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_318_9266"/>
-                      </filter>
-                      <linearGradient id="paint0_linear_318_9266" x1="444.696" y1="559.1" x2="77.9464" y2="1247.07" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FDE614"/>
-                        <stop offset="0.676656" stop-color="#FDAE14"/>
-                        <stop offset="0.878274" stop-color="#8CB53E"/>
-                        <stop offset="1" stop-color="#B8D15E"/>
-                      </linearGradient>
+                        <filter id="filter0_f_318_9266" x="0.21875" y="0.0820312" width="1510.88" height="856.642"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_318_9266" />
+                        </filter>
+                        <linearGradient id="paint0_linear_318_9266" x1="444.696" y1="559.1" x2="77.9464" y2="1247.07"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FDE614" />
+                            <stop offset="0.676656" stop-color="#FDAE14" />
+                            <stop offset="0.878274" stop-color="#8CB53E" />
+                            <stop offset="1" stop-color="#B8D15E" />
+                        </linearGradient>
                     </defs>
-                  </svg>
+                </svg>
             </div>
             <div class="hero-positon2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="796" viewBox="0 0 1920 796" fill="none">
                     <g opacity="0.25" filter="url(#filter0_f_318_9267)">
-                      <path d="M1863.85 386.653C1863.85 622.823 1208.62 483.953 969.69 483.953C730.762 483.953 122.503 658.052 122.503 421.882C122.503 185.712 730.762 294.384 969.69 294.384C1208.62 294.384 1863.85 150.482 1863.85 386.653Z" fill="url(#paint0_linear_318_9267)"/>
+                        <path
+                            d="M1863.85 386.653C1863.85 622.823 1208.62 483.953 969.69 483.953C730.762 483.953 122.503 658.052 122.503 421.882C122.503 185.712 730.762 294.384 969.69 294.384C1208.62 294.384 1863.85 150.482 1863.85 386.653Z"
+                            fill="url(#paint0_linear_318_9267)" />
                     </g>
                     <defs>
-                      <filter id="filter0_f_318_9267" x="-127.497" y="0.969238" width="2241.35" height="794.796" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                        <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_318_9267"/>
-                      </filter>
-                      <linearGradient id="paint0_linear_318_9267" x1="369.109" y1="317.871" x2="1675.96" y2="492.342" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FDE614"/>
-                        <stop offset="0.51047" stop-color="#87B94B"/>
-                        <stop offset="1" stop-color="#FDCA14"/>
-                      </linearGradient>
+                        <filter id="filter0_f_318_9267" x="-127.497" y="0.969238" width="2241.35" height="794.796"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_318_9267" />
+                        </filter>
+                        <linearGradient id="paint0_linear_318_9267" x1="369.109" y1="317.871" x2="1675.96" y2="492.342"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FDE614" />
+                            <stop offset="0.51047" stop-color="#87B94B" />
+                            <stop offset="1" stop-color="#FDCA14" />
+                        </linearGradient>
                     </defs>
-                  </svg>
+                </svg>
             </div>
             <div class="hero-positon3"></div>
         </div>
@@ -298,13 +384,14 @@
         </div>
         <div class="steps-left-top steps-left-top2">
             <div class="steps-left-top-img">
-                <img src="img/steps-left-top-img.svg" alt="Послідовність співпраці">
+                <img src="img/Graphics.svg" alt="Послідовність співпраці">
             </div>
             <div class="steps-left-top-text">
                 <span>покроковий план</span>
                 <h2>Послідовність співпраці</h2>
             </div>
         </div>
+       <div class="steps-flex">
         <div class="steps-left">
             <div class="steps-left-top">
                 <div class="steps-left-top-img">
@@ -552,31 +639,36 @@
                 </div>
             </div>
         </div>
+       </div>
     </section>
 
     <section class="request" id="request">
         <div class="request-position">
-          <div class="request-position1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1244" viewBox="0 0 1920 1244" fill="none">
-                <g filter="url(#filter0_f_324_6295)">
-                  <path d="M762.262 666.355C1126.16 666.355 1890.94 1236.2 1919.44 812.225C1796.64 237.023 1235.54 408.992 1000.68 277.787C636.782 277.787 -0.405273 53.2253 -0.405357 887.733C-0.40539 1218.93 398.365 666.355 762.262 666.355Z" fill="url(#paint0_linear_324_6295)"/>
-                </g>
-                <defs>
-                  <filter id="filter0_f_324_6295" x="-250.405" y="0.295898" width="2419.85" height="1243.18" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                    <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_324_6295"/>
-                  </filter>
-                  <linearGradient id="paint0_linear_324_6295" x1="-0.405262" y1="935.521" x2="1537.46" y2="80.9654" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#FDE614" stop-opacity="0.4"/>
-                    <stop offset="0.47922" stop-color="#FDE614" stop-opacity="0"/>
-                    <stop offset="1" stop-color="#F18419" stop-opacity="0.4"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-          </div>
-          <div class="request-position2"></div>
-         
+            <div class="request-position1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1244" viewBox="0 0 1920 1244" fill="none">
+                    <g filter="url(#filter0_f_324_6295)">
+                        <path
+                            d="M762.262 666.355C1126.16 666.355 1890.94 1236.2 1919.44 812.225C1796.64 237.023 1235.54 408.992 1000.68 277.787C636.782 277.787 -0.405273 53.2253 -0.405357 887.733C-0.40539 1218.93 398.365 666.355 762.262 666.355Z"
+                            fill="url(#paint0_linear_324_6295)" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_f_324_6295" x="-250.405" y="0.295898" width="2419.85" height="1243.18"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_324_6295" />
+                        </filter>
+                        <linearGradient id="paint0_linear_324_6295" x1="-0.405262" y1="935.521" x2="1537.46"
+                            y2="80.9654" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FDE614" stop-opacity="0.4" />
+                            <stop offset="0.47922" stop-color="#FDE614" stop-opacity="0" />
+                            <stop offset="1" stop-color="#F18419" stop-opacity="0.4" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="request-position2"></div>
+
         </div>
         <div class="request-left">
             <div class="request-left-tittle">
@@ -701,27 +793,31 @@
             <div class="case-position1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1296" viewBox="0 0 1920 1296" fill="none">
                     <g opacity="0.5" filter="url(#filter0_f_366_13255)">
-                      <path d="M1863.85 636.652C1863.85 872.823 1208.62 733.953 969.69 733.953C730.762 733.953 122.503 908.052 122.503 671.881C122.503 435.711 730.762 544.384 969.69 544.384C1208.62 544.384 1863.85 400.482 1863.85 636.652Z" fill="url(#paint0_linear_366_13255)"/>
+                        <path
+                            d="M1863.85 636.652C1863.85 872.823 1208.62 733.953 969.69 733.953C730.762 733.953 122.503 908.052 122.503 671.881C122.503 435.711 730.762 544.384 969.69 544.384C1208.62 544.384 1863.85 400.482 1863.85 636.652Z"
+                            fill="url(#paint0_linear_366_13255)" />
                     </g>
                     <defs>
-                      <filter id="filter0_f_366_13255" x="-377.497" y="0.96875" width="2741.35" height="1294.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                        <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_366_13255"/>
-                      </filter>
-                      <linearGradient id="paint0_linear_366_13255" x1="369.109" y1="567.871" x2="1675.96" y2="742.341" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FDE614"/>
-                        <stop offset="0.51047" stop-color="#8314F2"/>
-                        <stop offset="1" stop-color="#FDCA14"/>
-                      </linearGradient>
+                        <filter id="filter0_f_366_13255" x="-377.497" y="0.96875" width="2741.35" height="1294.8"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_366_13255" />
+                        </filter>
+                        <linearGradient id="paint0_linear_366_13255" x1="369.109" y1="567.871" x2="1675.96" y2="742.341"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FDE614" />
+                            <stop offset="0.51047" stop-color="#8314F2" />
+                            <stop offset="1" stop-color="#FDCA14" />
+                        </linearGradient>
                     </defs>
-                  </svg>
+                </svg>
             </div>
             <div class="case-position2"></div>
         </div>
         <div class="case-left-tittle">
             <div class="case-left-tittle-img">
-                <img src="img/steps-left-top-img.svg" alt="Послідовність співпраці">
+                <img src="img/Graphics.svg" alt="Послідовність співпраці">
             </div>
             <div class="case-left-tittle-text">
                 <span>наші кейси</span>
@@ -731,334 +827,354 @@
         <div class="case-box swiper">
             <div class="case-box-slider swiper-wrapper">
                 <div class="case-box-slider-item swiper-slide">
-                    <a data-fancybox data-src="#box1" data-modal="true" href="javascript:;" class="stories-btn"></a>
-                    <h3>Приватний заміський <br> будинок</h3>
-                    <div class="case-box-item-block1">
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="Київ">
-                            Київ
+                    <div class="case-box-container">
+                        <a data-fancybox data-src="#box1" data-modal="true" href="javascript:;" class="stories-btn"></a>
+                        <h3>Приватний заміський <br> будинок</h3>
+                        <div class="case-box-item-block1">
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item1.svg" alt="Київ">
+                                Київ
+                            </div>
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item2.svg" alt="Сонячна станція">
+                                Сонячна станція
+                            </div>
                         </div>
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="Сонячна станція">
-                            Сонячна станція
+                        <div class="case-box-item-block2">
+                            <div class="case-box-item-block2-content">
+                                <span>8 кВт</span>
+                                <p>Потужність станції</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>9 300 кВт</span>
+                                <p>Генерація/рік</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>55 800 грн</span>
+                                <p>Економія/рік</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="case-box-item-block2">
-                        <div class="case-box-item-block2-content">
-                            <span>8 кВт</span>
-                            <p>Потужність станції</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>9 300 кВт</span>
-                            <p>Генерація/рік</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>55 800 грн</span>
-                            <p>Економія/рік</p>
-                        </div>
-                    </div>
-                    <div class="case-box-slider-item-img">
-                        <img src="img/case-box1.png" alt="Приватний заміський будинок">
-                        <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box1" data-modal="true" href="javascript:;" class="stories-btn">
-                                ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-box-slider-item swiper-slide">
-                    <a data-fancybox data-src="#box2" data-modal="true" href="javascript:;" class="stories-btn"></a>
-                    <h3>Приватний заміський <br> будинок</h3>
-                    <div class="case-box-item-block1">
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="Козин">
-                            Козин
-                        </div>
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="Сонячна станція">
-                            Сонячна станція
-                        </div>
-                    </div>
-                    <div class="case-box-item-block2">
-                        <div class="case-box-item-block2-content">
-                            <span>24 кВт</span>
-                            <p>Потужність станції</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>28 000 кВт</span>
-                            <p>Генерація/рік</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>168 000 грн</span>
-                            <p>Економія/рік</p>
-                        </div>
-                    </div>
-                    <div class="case-box-slider-item-img">
-                        <img src="img/case-box2.png" alt="Приватний заміський будинок">
-                        <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box2" data-modal="true" href="javascript:;"
-                                class="stories-btn">ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
+                        <div class="case-box-slider-item-img">
+                            <img src="img/case-box1.png" alt="Приватний заміський будинок">
+                            <div class="case-box-slider-item-img-text">
+                                <a data-fancybox data-src="#box1" data-modal="true" href="javascript:;"
+                                    class="stories-btn">
+                                    ще фото</a>
+                                <img src="img/foto-modal.svg" alt="foto">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="case-box-slider-item swiper-slide">
-                    <a data-fancybox data-src="#box3" data-modal="true" href="javascript:;" class="stories-btn"></a>
-                    <h3>Приватний заміський <br> будинок</h3>
-                    <div class="case-box-item-block1">
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="Київ">
-                            Київська обл.
+                    <div class="case-box-container">
+                        <a data-fancybox data-src="#box2" data-modal="true" href="javascript:;" class="stories-btn"></a>
+                        <h3>Приватний заміський <br> будинок</h3>
+                        <div class="case-box-item-block1">
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item1.svg" alt="Козин">
+                                Козин
+                            </div>
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item2.svg" alt="Сонячна станція">
+                                Сонячна станція
+                            </div>
                         </div>
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="Сонячна станція">
-                            Сонячна станція
+                        <div class="case-box-item-block2">
+                            <div class="case-box-item-block2-content">
+                                <span>24 кВт</span>
+                                <p>Потужність станції</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>28 000 кВт</span>
+                                <p>Генерація/рік</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>168 000 грн</span>
+                                <p>Економія/рік</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="case-box-item-block2">
-                        <div class="case-box-item-block2-content">
-                            <span>10 кВт</span>
-                            <p>Потужність станції</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>12 000 кВт</span>
-                            <p>Генерація/рік</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>72 000 грн</span>
-                            <p>Економія/рік</p>
-                        </div>
-                    </div>
-                    <div class="case-box-slider-item-img">
-                        <img src="img/case-box3.png" alt="Приватний заміський будинок">
-                        <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box3" data-modal="true" href="javascript:;"
-                                class="stories-btn">ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-box-slider-item swiper-slide">
-                    <a data-fancybox data-src="#box4" data-modal="true" href="javascript:;" class="stories-btn"></a>
-                    <h3>Приватний заміський <br> будинок</h3>
-                    <div class="case-box-item-block1">
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="Київ">
-                            Київ
-                        </div>
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="Сонячна станція">
-                            Сонячна станція
-                        </div>
-                    </div>
-                    <div class="case-box-item-block2">
-                        <div class="case-box-item-block2-content">
-                            <span>8 кВт</span>
-                            <p>Потужність станції</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>9 300 кВт</span>
-                            <p>Генерація/рік</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>55 800 грн</span>
-                            <p>Економія/рік</p>
-                        </div>
-                    </div>
-                    <div class="case-box-slider-item-img">
-                        <img src="img/case-box1.png" alt="Приватний заміський будинок">
-                        <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box4" data-modal="true" href="javascript:;"
-                                class="stories-btn">ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
+                        <div class="case-box-slider-item-img">
+                            <img src="img/case-box2.png" alt="Приватний заміський будинок">
+                            <div class="case-box-slider-item-img-text">
+                                <a data-fancybox data-src="#box2" data-modal="true" href="javascript:;"
+                                    class="stories-btn">ще фото</a>
+                                <img src="img/foto-modal.svg" alt="foto">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="case-box-slider-item swiper-slide">
-                    <a data-fancybox data-src="#box5" data-modal="true" href="javascript:;" class="stories-btn"></a>
-                    <h3>Приватний заміський <br> будинок</h3>
-                    <div class="case-box-item-block1">
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="Козин">
-                            Козин
+                    <div class="case-box-container">
+                        <a data-fancybox data-src="#box3" data-modal="true" href="javascript:;" class="stories-btn"></a>
+                        <h3>Приватний заміський <br> будинок</h3>
+                        <div class="case-box-item-block1">
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item1.svg" alt="Київ">
+                                Київська обл.
+                            </div>
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item2.svg" alt="Сонячна станція">
+                                Сонячна станція
+                            </div>
                         </div>
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="Сонячна станція">
-                            Сонячна станція
+                        <div class="case-box-item-block2">
+                            <div class="case-box-item-block2-content">
+                                <span>10 кВт</span>
+                                <p>Потужність станції</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>12 000 кВт</span>
+                                <p>Генерація/рік</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>72 000 грн</span>
+                                <p>Економія/рік</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="case-box-item-block2">
-                        <div class="case-box-item-block2-content">
-                            <span>24 кВт</span>
-                            <p>Потужність станції</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>28 000 кВт</span>
-                            <p>Генерація/рік</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>168 000 грн</span>
-                            <p>Економія/рік</p>
-                        </div>
-                    </div>
-                    <div class="case-box-slider-item-img">
-                        <img src="img/case-box2.png" alt="Приватний заміський будинок">
-                        <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box5" data-modal="true" href="javascript:;"
-                                class="stories-btn">ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-box-slider-item swiper-slide">
-                    <a data-fancybox data-src="#box6" data-modal="true" href="javascript:;" class="stories-btn"></a>
-                    <h3>Приватний заміський <br> будинок</h3>
-                    <div class="case-box-item-block1">
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="Київ">
-                            Київська обл.
-                        </div>
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="Сонячна станція">
-                            Сонячна станція
-                        </div>
-                    </div>
-                    <div class="case-box-item-block2">
-                        <div class="case-box-item-block2-content">
-                            <span>10 кВт</span>
-                            <p>Потужність станції</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>12 000 кВт</span>
-                            <p>Генерація/рік</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>72 000 грн</span>
-                            <p>Економія/рік</p>
-                        </div>
-                    </div>
-                    <div class="case-box-slider-item-img">
-                        <img src="img/case-box3.png" alt="Приватний заміський будинок">
-                        <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box6" data-modal="true" href="javascript:;"
-                                class="stories-btn">ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
+                        <div class="case-box-slider-item-img">
+                            <img src="img/case-box3.png" alt="Приватний заміський будинок">
+                            <div class="case-box-slider-item-img-text">
+                                <a data-fancybox data-src="#box3" data-modal="true" href="javascript:;"
+                                    class="stories-btn">ще фото</a>
+                                <img src="img/foto-modal.svg" alt="foto">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="case-box-slider-item swiper-slide">
-                    <a data-fancybox data-src="#box7" data-modal="true" href="javascript:;" class="stories-btn"></a>
-                    <h3>Приватний заміський <br> будинок</h3>
-                    <div class="case-box-item-block1">
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="Київ">
-                            Київ
+                    <div class="case-box-container">
+                        <a data-fancybox data-src="#box4" data-modal="true" href="javascript:;" class="stories-btn"></a>
+                        <h3>Приватний заміський <br> будинок</h3>
+                        <div class="case-box-item-block1">
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item1.svg" alt="Київ">
+                                Київ
+                            </div>
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item2.svg" alt="Сонячна станція">
+                                Сонячна станція
+                            </div>
                         </div>
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="Сонячна станція">
-                            Сонячна станція
+                        <div class="case-box-item-block2">
+                            <div class="case-box-item-block2-content">
+                                <span>8 кВт</span>
+                                <p>Потужність станції</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>9 300 кВт</span>
+                                <p>Генерація/рік</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>55 800 грн</span>
+                                <p>Економія/рік</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="case-box-item-block2">
-                        <div class="case-box-item-block2-content">
-                            <span>8 кВт</span>
-                            <p>Потужність станції</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>9 300 кВт</span>
-                            <p>Генерація/рік</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>55 800 грн</span>
-                            <p>Економія/рік</p>
-                        </div>
-                    </div>
-                    <div class="case-box-slider-item-img">
-                        <img src="img/case-box1.png" alt="Приватний заміський будинок">
-                        <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box7" data-modal="true" href="javascript:;"
-                                class="stories-btn">ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="case-box-slider-item swiper-slide">
-                    <a data-fancybox data-src="#box8" data-modal="true" href="javascript:;" class="stories-btn"></a>
-                    <h3>Приватний заміський <br> будинок</h3>
-                    <div class="case-box-item-block1">
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="Козин">
-                            Козин
-                        </div>
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="Сонячна станція">
-                            Сонячна станція
-                        </div>
-                    </div>
-                    <div class="case-box-item-block2">
-                        <div class="case-box-item-block2-content">
-                            <span>24 кВт</span>
-                            <p>Потужність станції</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>28 000 кВт</span>
-                            <p>Генерація/рік</p>
-                        </div>
-                        <div class="case-box-item-block2-content">
-                            <span>168 000 грн</span>
-                            <p>Економія/рік</p>
-                        </div>
-                    </div>
-                    <div class="case-box-slider-item-img">
-                        <img src="img/case-box2.png" alt="Приватний заміський будинок">
-                        <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box8" data-modal="true" href="javascript:;" class="stories-btn">
-                                ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
+                        <div class="case-box-slider-item-img">
+                            <img src="img/case-box1.png" alt="Приватний заміський будинок">
+                            <div class="case-box-slider-item-img-text">
+                                <a data-fancybox data-src="#box4" data-modal="true" href="javascript:;"
+                                    class="stories-btn">ще фото</a>
+                                <img src="img/foto-modal.svg" alt="foto">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="case-box-slider-item swiper-slide">
-                    <a data-fancybox data-src="#box9" data-modal="true" href="javascript:;" class="stories-btn"></a>
-                    <h3>Приватний заміський <br> будинок</h3>
-                    <div class="case-box-item-block1">
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="Київ">
-                            Київська обл.
+                    <div class="case-box-container">
+                        <a data-fancybox data-src="#box5" data-modal="true" href="javascript:;" class="stories-btn"></a>
+                        <h3>Приватний заміський <br> будинок</h3>
+                        <div class="case-box-item-block1">
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item1.svg" alt="Козин">
+                                Козин
+                            </div>
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item2.svg" alt="Сонячна станція">
+                                Сонячна станція
+                            </div>
                         </div>
-                        <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="Сонячна станція">
-                            Сонячна станція
+                        <div class="case-box-item-block2">
+                            <div class="case-box-item-block2-content">
+                                <span>24 кВт</span>
+                                <p>Потужність станції</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>28 000 кВт</span>
+                                <p>Генерація/рік</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>168 000 грн</span>
+                                <p>Економія/рік</p>
+                            </div>
+                        </div>
+                        <div class="case-box-slider-item-img">
+                            <img src="img/case-box2.png" alt="Приватний заміський будинок">
+                            <div class="case-box-slider-item-img-text">
+                                <a data-fancybox data-src="#box5" data-modal="true" href="javascript:;"
+                                    class="stories-btn">ще фото</a>
+                                <img src="img/foto-modal.svg" alt="foto">
+                            </div>
                         </div>
                     </div>
-                    <div class="case-box-item-block2">
-                        <div class="case-box-item-block2-content">
-                            <span>10 кВт</span>
-                            <p>Потужність станції</p>
+                </div>
+
+                <div class="case-box-slider-item swiper-slide">
+                    <div class="case-box-container">
+                        <a data-fancybox data-src="#box6" data-modal="true" href="javascript:;" class="stories-btn"></a>
+                        <h3>Приватний заміський <br> будинок</h3>
+                        <div class="case-box-item-block1">
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item1.svg" alt="Київ">
+                                Київська обл.
+                            </div>
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item2.svg" alt="Сонячна станція">
+                                Сонячна станція
+                            </div>
                         </div>
-                        <div class="case-box-item-block2-content">
-                            <span>12 000 кВт</span>
-                            <p>Генерація/рік</p>
+                        <div class="case-box-item-block2">
+                            <div class="case-box-item-block2-content">
+                                <span>10 кВт</span>
+                                <p>Потужність станції</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>12 000 кВт</span>
+                                <p>Генерація/рік</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>72 000 грн</span>
+                                <p>Економія/рік</p>
+                            </div>
                         </div>
-                        <div class="case-box-item-block2-content">
-                            <span>72 000 грн</span>
-                            <p>Економія/рік</p>
+                        <div class="case-box-slider-item-img">
+                            <img src="img/case-box3.png" alt="Приватний заміський будинок">
+                            <div class="case-box-slider-item-img-text">
+                                <a data-fancybox data-src="#box6" data-modal="true" href="javascript:;"
+                                    class="stories-btn">ще фото</a>
+                                <img src="img/foto-modal.svg" alt="foto">
+                            </div>
                         </div>
                     </div>
-                    <div class="case-box-slider-item-img">
-                        <img src="img/case-box3.png" alt="Приватний заміський будинок">
-                        <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box9" data-modal="true" href="javascript:;"
-                                class="stories-btn">ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
+                </div>
+
+                <div class="case-box-slider-item swiper-slide">
+                    <div class="case-box-container">
+                        <a data-fancybox data-src="#box7" data-modal="true" href="javascript:;" class="stories-btn"></a>
+                        <h3>Приватний заміський <br> будинок</h3>
+                        <div class="case-box-item-block1">
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item1.svg" alt="Київ">
+                                Київ
+                            </div>
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item2.svg" alt="Сонячна станція">
+                                Сонячна станція
+                            </div>
+                        </div>
+                        <div class="case-box-item-block2">
+                            <div class="case-box-item-block2-content">
+                                <span>8 кВт</span>
+                                <p>Потужність станції</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>9 300 кВт</span>
+                                <p>Генерація/рік</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>55 800 грн</span>
+                                <p>Економія/рік</p>
+                            </div>
+                        </div>
+                        <div class="case-box-slider-item-img">
+                            <img src="img/case-box1.png" alt="Приватний заміський будинок">
+                            <div class="case-box-slider-item-img-text">
+                                <a data-fancybox data-src="#box7" data-modal="true" href="javascript:;"
+                                    class="stories-btn">ще фото</a>
+                                <img src="img/foto-modal.svg" alt="foto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-box-slider-item swiper-slide">
+                    <div class="case-box-container">
+                        <a data-fancybox data-src="#box8" data-modal="true" href="javascript:;" class="stories-btn"></a>
+                        <h3>Приватний заміський <br> будинок</h3>
+                        <div class="case-box-item-block1">
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item1.svg" alt="Козин">
+                                Козин
+                            </div>
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item2.svg" alt="Сонячна станція">
+                                Сонячна станція
+                            </div>
+                        </div>
+                        <div class="case-box-item-block2">
+                            <div class="case-box-item-block2-content">
+                                <span>24 кВт</span>
+                                <p>Потужність станції</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>28 000 кВт</span>
+                                <p>Генерація/рік</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>168 000 грн</span>
+                                <p>Економія/рік</p>
+                            </div>
+                        </div>
+                        <div class="case-box-slider-item-img">
+                            <img src="img/case-box2.png" alt="Приватний заміський будинок">
+                            <div class="case-box-slider-item-img-text">
+                                <a data-fancybox data-src="#box8" data-modal="true" href="javascript:;"
+                                    class="stories-btn">
+                                    ще фото</a>
+                                <img src="img/foto-modal.svg" alt="foto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-box-slider-item swiper-slide">
+                    <div class="case-box-container">
+                        <a data-fancybox data-src="#box9" data-modal="true" href="javascript:;" class="stories-btn"></a>
+                        <h3>Приватний заміський <br> будинок</h3>
+                        <div class="case-box-item-block1">
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item1.svg" alt="Київ">
+                                Київська обл.
+                            </div>
+                            <div class="case-box-item-block1-container">
+                                <img src="img/case-box-item2.svg" alt="Сонячна станція">
+                                Сонячна станція
+                            </div>
+                        </div>
+                        <div class="case-box-item-block2">
+                            <div class="case-box-item-block2-content">
+                                <span>10 кВт</span>
+                                <p>Потужність станції</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>12 000 кВт</span>
+                                <p>Генерація/рік</p>
+                            </div>
+                            <div class="case-box-item-block2-content">
+                                <span>72 000 грн</span>
+                                <p>Економія/рік</p>
+                            </div>
+                        </div>
+                        <div class="case-box-slider-item-img">
+                            <img src="img/case-box3.png" alt="Приватний заміський будинок">
+                            <div class="case-box-slider-item-img-text">
+                                <a data-fancybox data-src="#box9" data-modal="true" href="javascript:;"
+                                    class="stories-btn">ще фото</a>
+                                <img src="img/foto-modal.svg" alt="foto">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1067,14 +1183,15 @@
             <button class="case-box-btn">Показати ще 3
                 <img src="img/case-box-btn.svg" alt="arrow">
             </button>
-            <div class="case-pagination"></div>
         </div>
+        <div class="case-pagination"></div>
     </section>
 
     <section class="argument">
         <div class="argument-position">
             <div class="argument-position1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="2119.725" height="662.201" viewBox="0 0 2119.725 662.201" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2119.725" height="662.201" viewBox="0 0 2119.725 662.201"
+                    fill="none">
                     <g opacity="0.5" filter="url(#filter0_f_304_8968)">
                         <path
                             d="M2019.86 734.926C1885.14 887.036 253.109 1163.01 14.1812 1163.01C-224.747 1163.01 -14.0677 801.602 -14.0677 565.432C-14.0677 329.261 716.193 816.384 955.121 816.384C1194.05 816.384 2019.86 498.756 2019.86 734.926Z"
@@ -1308,7 +1425,7 @@
             </div>
             <div class="form-card-container-right">
                 <h2>Замовляйте консультацію зараз</h2>
-                <form action="">
+                <form action="" id="#form">
                     <label for="card-name">Ваше ім'я</label>
                     <div class="form-input">
                         <input type="text" id="card-name" placeholder="Наприклад: Григорій Сковорода" required />
@@ -1336,16 +1453,16 @@
         </div>
         <div class="certificates-tittle">
             <div class="about-us-left-tittle-logo-img">
-                <img src="img/certificates-img.svg" alt="Сертифікати відповідності">
+                <img src="img/Graphics.svg" alt="Сертифікати відповідності">
             </div>
             <div class="certificates-tittle-text">
                 <span>якість та впевненість</span>
                 <h2>Сертифікати відповідності</h2>
             </div>
         </div>
-        <div class="certificates-container">
-            <div class="certificates-slider">
-                <div class="certificates-item">
+        <div class="certificates-container swiper">
+            <div class="certificates-slider swiper-wrapper">
+                <div class="certificates-item swiper-slide">
                     <a href="sertificat7.jpg" class="stories-btn" target="_blank"></a>
                     <img src="img/certificates1.png" alt="Сертифікати">
                     <div class="certificates-item-btn">
@@ -1354,7 +1471,7 @@
                     </div>
                 </div>
 
-                <div class="certificates-item">
+                <div class="certificates-item swiper-slide">
                     <a href="sertificat6.jpg" class="stories-btn" target="_blank"></a>
                     <img src="img/certificates2.png" alt="Сертифікати">
                     <div class="certificates-item-btn">
@@ -1363,7 +1480,7 @@
                     </div>
                 </div>
 
-                <div class="certificates-item">
+                <div class="certificates-item swiper-slide">
                     <a href="sertificat1.jpg" class="stories-btn" target="_blank"></a>
                     <img src="img/certificates3.png" alt="Сертифікати">
                     <div class="certificates-item-btn">
@@ -1372,7 +1489,7 @@
                     </div>
                 </div>
 
-                <div class="certificates-item">
+                <div class="certificates-item swiper-slide">
                     <a href="sertificat4.pdf" class="stories-btn" target="_blank"></a>
                     <img src="img/certificates4.png" alt="Сертифікати">
                     <div class="certificates-item-btn">
@@ -1381,7 +1498,7 @@
                     </div>
                 </div>
 
-                <div class="certificates-item">
+                <div class="certificates-item swiper-slide">
                     <a href="sertificat3.pdf" class="stories-btn" target="_blank"></a>
                     <img src="img/certificates5.png" alt="Сертифікати">
                     <div class="certificates-item-btn">
@@ -1390,7 +1507,7 @@
                     </div>
                 </div>
 
-                <div class="certificates-item">
+                <div class="certificates-item swiper-slide">
                     <a href="sertificat2.jpg" class="stories-btn" target="_blank"></a>
                     <img src="img/certificates6.png" alt="Сертифікати">
                     <div class="certificates-item-btn">
@@ -1399,8 +1516,8 @@
                     </div>
                 </div>
 
-                <div class="certificates-item">
-                    <a href="sertificat5.PDF" class="stories-btn" target="_blank"></a> 
+                <div class="certificates-item swiper-slide">
+                    <a href="sertificat5.PDF" class="stories-btn" target="_blank"></a>
                     <img src="img/certificates8.png" alt="Сертифікати">
                     <div class="certificates-item-btn">
                         <a href="sertificat5.PDF" class="stories-btn" target="_blank">Збільшити</a>
@@ -1413,6 +1530,7 @@
                 <img src="img/case-box-btn.svg" alt="arrow">
             </button>
         </div>
+        <div class="certificates-pagination"></div>
     </section>
 
     <section class="partners">
@@ -1521,179 +1639,212 @@
                 </a>
             </div>
         </div>
-        <div class="feedback-box">
-            <div class="feedback-slider">
-                <div class="feedback-item">
-                    <div class="feedback-item-content">
-                        <div class="feedback-item-content-tittle">
-                            <h3>Max Blacksmith_off</h3>
-                            <img src="img/star2.svg" alt="Star">
+        <div class="feedback-box swiper">
+            <div class="feedback-slider  swiper-wrapper">
+                <div class="feedback-item swiper-slide">
+                    <div class="feedback-item-container">
+                        <div class="feedback-item-content">
+                            <div class="feedback-item-content-tittle">
+                                <h3>Max Blacksmith_off</h3>
+                                <img src="img/star2.svg" alt="Star">
+                            </div>
+                            <span>2 місяці тому</span>
+                            <p>Хлопці-топ. Молода, потужна та перспективна команда. Зробили все якісно та швидко.
+                                Однозначну
+                                буду радити, як приклад сервісу та якості, в підході до роботи, починаючи з першого
+                                дзвінка
+                                і завершуючи після монтажним консультуванням. Однозначно кращі в своїй сфері. Мав
+                                неприємний
+                                досвід з кількома іншими компаніями, хоч і з більшими можливостями та кількістю
+                                працівників,
+                                знаю про шо кажу. Якщо обираєте ще, кому довірити, Вашу майбутню енергонезалежність-Вам
+                                однозначно сюди. За допомогою цих хлопців, вже зробив незалежними від блекаутів і себе і
+                                батьків, все працює, як годинник. Раджу, обома руками «за»!</p>
                         </div>
-                        <span>2 місяці тому</span>
-                        <p>Хлопці-топ. Молода, потужна та перспективна команда. Зробили все якісно та швидко. Однозначну
-                            буду радити, як приклад сервісу та якості, в підході до роботи, починаючи з першого дзвінка
-                            і завершуючи після монтажним консультуванням. Однозначно кращі в своїй сфері. Мав неприємний
-                            досвід з кількома іншими компаніями, хоч і з більшими можливостями та кількістю працівників,
-                            знаю про шо кажу. Якщо обираєте ще, кому довірити, Вашу майбутню енергонезалежність-Вам
-                            однозначно сюди. За допомогою цих хлопців, вже зробив незалежними від блекаутів і себе і
-                            батьків, все працює, як годинник. Раджу, обома руками «за»!</p>
-                    </div>
-                    <div class="feedback-item-link">
-                        <a href="#">
-                            <img src="img/go.svg" alt="google">
-                        </a>
+                        <div class="feedback-item-link">
+                            <a href="#">
+                                <img src="img/go.svg" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="feedback-item">
-                    <div class="feedback-item-content">
-                        <div class="feedback-item-content-tittle">
-                            <h3>Dmytro Vernyhorodskyi</h3>
-                            <img src="img/Star.svg" alt="Star">
+                <div class="feedback-item swiper-slide">
+                    <div class="feedback-item-container">
+                        <div class="feedback-item-content">
+                            <div class="feedback-item-content-tittle">
+                                <h3>Dmytro Vernyhorodskyi</h3>
+                                <img src="img/Star.svg" alt="Star">
+                            </div>
+                            <span>місяць тому</span>
+                            <p>Замовляв 6 сонячних панелей з монтажем. Приемні хлопці, зробили швидко, зрозуміла ціна та
+                                сплата на ФОП. Сподівання виправдані, усе працює. Можу радити.</p>
                         </div>
-                        <span>місяць тому</span>
-                        <p>Замовляв 6 сонячних панелей з монтажем. Приемні хлопці, зробили швидко, зрозуміла ціна та
-                            сплата на ФОП. Сподівання виправдані, усе працює. Можу радити.</p>
-                    </div>
-                    <div class="feedback-item-link">
-                        <a href="#">
-                            <img src="img/go.svg" alt="google">
-                        </a>
+                        <div class="feedback-item-link">
+                            <a href="#">
+                                <img src="img/go.svg" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="feedback-item">
-                    <div class="feedback-item-content">
-                        <div class="feedback-item-content-tittle">
-                            <h3>Sergiy Zuzak</h3>
-                            <img src="img/Star.svg" alt="Star">
+                <div class="feedback-item swiper-slide">
+                    <div class="feedback-item-container">
+                        <div class="feedback-item-content">
+                            <div class="feedback-item-content-tittle">
+                                <h3>Sergiy Zuzak</h3>
+                                <img src="img/Star.svg" alt="Star">
+                            </div>
+                            <span>3 тижні тому</span>
+                            <p>Дуже високоякісний сервіс в першу чергу, і знання справи на достойному рівні. Хлопці
+                                ставили
+                                мені систему на 15кв сонця + акб. Нарікань нема. Приємно те, що не виявляють бажання
+                                заробити більше ніж треба. При підборі і при покращенні системи завжди говорили - це
+                                переплата вам таке не треба, під ваші потреби ось цього досить. Дуже рекомендую</p>
                         </div>
-                        <span>3 тижні тому</span>
-                        <p>Дуже високоякісний сервіс в першу чергу, і знання справи на достойному рівні. Хлопці ставили
-                            мені систему на 15кв сонця + акб. Нарікань нема. Приємно те, що не виявляють бажання
-                            заробити більше ніж треба. При підборі і при покращенні системи завжди говорили - це
-                            переплата вам таке не треба, під ваші потреби ось цього досить. Дуже рекомендую</p>
-                    </div>
-                    <div class="feedback-item-link">
-                        <a href="#">
-                            <img src="img/go.svg" alt="google">
-                        </a>
+                        <div class="feedback-item-link">
+                            <a href="#">
+                                <img src="img/go.svg" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="feedback-item">
-                    <div class="feedback-item-content">
-                        <div class="feedback-item-content-tittle">
-                            <h3>Max Blacksmith_off</h3>
-                            <img src="img/star2.svg" alt="Star">
+                <div class="feedback-item swiper-slide">
+                    <div class="feedback-item-container">
+                        <div class="feedback-item-content">
+                            <div class="feedback-item-content-tittle">
+                                <h3>Max Blacksmith_off</h3>
+                                <img src="img/star2.svg" alt="Star">
+                            </div>
+                            <span>2 місяці тому</span>
+                            <p>Хлопці-топ. Молода, потужна та перспективна команда. Зробили все якісно та швидко.
+                                Однозначну
+                                буду радити, як приклад сервісу та якості, в підході до роботи, починаючи з першого
+                                дзвінка
+                                і завершуючи після монтажним консультуванням. Однозначно кращі в своїй сфері. Мав
+                                неприємний
+                                досвід з кількома іншими компаніями, хоч і з більшими можливостями та кількістю
+                                працівників,
+                                знаю про шо кажу. Якщо обираєте ще, кому довірити, Вашу майбутню енергонезалежність-Вам
+                                однозначно сюди. За допомогою цих хлопців, вже зробив незалежними від блекаутів і себе і
+                                батьків, все працює, як годинник. Раджу, обома руками «за»!</p>
                         </div>
-                        <span>2 місяці тому</span>
-                        <p>Хлопці-топ. Молода, потужна та перспективна команда. Зробили все якісно та швидко. Однозначну
-                            буду радити, як приклад сервісу та якості, в підході до роботи, починаючи з першого дзвінка
-                            і завершуючи після монтажним консультуванням. Однозначно кращі в своїй сфері. Мав неприємний
-                            досвід з кількома іншими компаніями, хоч і з більшими можливостями та кількістю працівників,
-                            знаю про шо кажу. Якщо обираєте ще, кому довірити, Вашу майбутню енергонезалежність-Вам
-                            однозначно сюди. За допомогою цих хлопців, вже зробив незалежними від блекаутів і себе і
-                            батьків, все працює, як годинник. Раджу, обома руками «за»!</p>
-                    </div>
-                    <div class="feedback-item-link">
-                        <a href="#">
-                            <img src="img/go.svg" alt="google">
-                        </a>
+                        <div class="feedback-item-link">
+                            <a href="#">
+                                <img src="img/go.svg" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="feedback-item">
-                    <div class="feedback-item-content">
-                        <div class="feedback-item-content-tittle">
-                            <h3>Dmytro Vernyhorodskyi</h3>
-                            <img src="img/star2.svg" alt="Star">
+                <div class="feedback-item swiper-slide">
+                    <div class="feedback-item-container">
+                        <div class="feedback-item-content">
+                            <div class="feedback-item-content-tittle">
+                                <h3>Dmytro Vernyhorodskyi</h3>
+                                <img src="img/star2.svg" alt="Star">
+                            </div>
+                            <span>місяць тому</span>
+                            <p>Замовляв 6 сонячних панелей з монтажем. Приемні хлопці, зробили швидко, зрозуміла ціна та
+                                сплата на ФОП. Сподівання виправдані, усе працює. Можу радити.</p>
                         </div>
-                        <span>місяць тому</span>
-                        <p>Замовляв 6 сонячних панелей з монтажем. Приемні хлопці, зробили швидко, зрозуміла ціна та
-                            сплата на ФОП. Сподівання виправдані, усе працює. Можу радити.</p>
-                    </div>
-                    <div class="feedback-item-link">
-                        <a href="#">
-                            <img src="img/go.svg" alt="google">
-                        </a>
+                        <div class="feedback-item-link">
+                            <a href="#">
+                                <img src="img/go.svg" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="feedback-item">
-                    <div class="feedback-item-content">
-                        <div class="feedback-item-content-tittle">
-                            <h3>Sergiy Zuzak</h3>
-                            <img src="img/star2.svg" alt="Star">
+                <div class="feedback-item swiper-slide">
+                    <div class="feedback-item-container">
+                        <div class="feedback-item-content">
+                            <div class="feedback-item-content-tittle">
+                                <h3>Sergiy Zuzak</h3>
+                                <img src="img/star2.svg" alt="Star">
+                            </div>
+                            <span>3 тижні тому</span>
+                            <p>Дуже високоякісний сервіс в першу чергу, і знання справи на достойному рівні. Хлопці
+                                ставили
+                                мені систему на 15кв сонця + акб. Нарікань нема. Приємно те, що не виявляють бажання
+                                заробити більше ніж треба. При підборі і при покращенні системи завжди говорили - це
+                                переплата вам таке не треба, під ваші потреби ось цього досить. Дуже рекомендую</p>
                         </div>
-                        <span>3 тижні тому</span>
-                        <p>Дуже високоякісний сервіс в першу чергу, і знання справи на достойному рівні. Хлопці ставили
-                            мені систему на 15кв сонця + акб. Нарікань нема. Приємно те, що не виявляють бажання
-                            заробити більше ніж треба. При підборі і при покращенні системи завжди говорили - це
-                            переплата вам таке не треба, під ваші потреби ось цього досить. Дуже рекомендую</p>
-                    </div>
-                    <div class="feedback-item-link">
-                        <a href="#">
-                            <img src="img/go.svg" alt="google">
-                        </a>
+                        <div class="feedback-item-link">
+                            <a href="#">
+                                <img src="img/go.svg" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="feedback-item">
-                    <div class="feedback-item-content">
-                        <div class="feedback-item-content-tittle">
-                            <h3>Max Blacksmith_off</h3>
-                            <img src="img/star2.svg" alt="Star">
+                <div class="feedback-item swiper-slide">
+                    <div class="feedback-item-container">
+                        <div class="feedback-item-content">
+                            <div class="feedback-item-content-tittle">
+                                <h3>Max Blacksmith_off</h3>
+                                <img src="img/star2.svg" alt="Star">
+                            </div>
+                            <span>2 місяці тому</span>
+                            <p>Хлопці-топ. Молода, потужна та перспективна команда. Зробили все якісно та швидко.
+                                Однозначну
+                                буду радити, як приклад сервісу та якості, в підході до роботи, починаючи з першого
+                                дзвінка
+                                і завершуючи після монтажним консультуванням. Однозначно кращі в своїй сфері. Мав
+                                неприємний
+                                досвід з кількома іншими компаніями, хоч і з більшими можливостями та кількістю
+                                працівників,
+                                знаю про шо кажу. Якщо обираєте ще, кому довірити, Вашу майбутню енергонезалежність-Вам
+                                однозначно сюди. За допомогою цих хлопців, вже зробив незалежними від блекаутів і себе і
+                                батьків, все працює, як годинник. Раджу, обома руками «за»!</p>
                         </div>
-                        <span>2 місяці тому</span>
-                        <p>Хлопці-топ. Молода, потужна та перспективна команда. Зробили все якісно та швидко. Однозначну
-                            буду радити, як приклад сервісу та якості, в підході до роботи, починаючи з першого дзвінка
-                            і завершуючи після монтажним консультуванням. Однозначно кращі в своїй сфері. Мав неприємний
-                            досвід з кількома іншими компаніями, хоч і з більшими можливостями та кількістю працівників,
-                            знаю про шо кажу. Якщо обираєте ще, кому довірити, Вашу майбутню енергонезалежність-Вам
-                            однозначно сюди. За допомогою цих хлопців, вже зробив незалежними від блекаутів і себе і
-                            батьків, все працює, як годинник. Раджу, обома руками «за»!</p>
-                    </div>
-                    <div class="feedback-item-link">
-                        <a href="#">
-                            <img src="img/go.svg" alt="google">
-                        </a>
+                        <div class="feedback-item-link">
+                            <a href="#">
+                                <img src="img/go.svg" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="feedback-item">
-                    <div class="feedback-item-content">
-                        <div class="feedback-item-content-tittle">
-                            <h3>Dmytro Vernyhorodskyi</h3>
-                            <img src="img/star2.svg" alt="Star">
+                <div class="feedback-item swiper-slide">
+                    <div class="feedback-item-container">
+                        <div class="feedback-item-content">
+                            <div class="feedback-item-content-tittle">
+                                <h3>Dmytro Vernyhorodskyi</h3>
+                                <img src="img/star2.svg" alt="Star">
+                            </div>
+                            <span>місяць тому</span>
+                            <p>Замовляв 6 сонячних панелей з монтажем. Приемні хлопці, зробили швидко, зрозуміла ціна та
+                                сплата на ФОП. Сподівання виправдані, усе працює. Можу радити.</p>
                         </div>
-                        <span>місяць тому</span>
-                        <p>Замовляв 6 сонячних панелей з монтажем. Приемні хлопці, зробили швидко, зрозуміла ціна та
-                            сплата на ФОП. Сподівання виправдані, усе працює. Можу радити.</p>
-                    </div>
-                    <div class="feedback-item-link">
-                        <a href="#">
-                            <img src="img/go.svg" alt="google">
-                        </a>
+                        <div class="feedback-item-link">
+                            <a href="#">
+                                <img src="img/go.svg" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="feedback-item">
-                    <div class="feedback-item-content">
-                        <div class="feedback-item-content-tittle">
-                            <h3>Sergiy Zuzak</h3>
-                            <img src="img/star2.svg" alt="Star">
+                <div class="feedback-item swiper-slide">
+                    <div class="feedback-item-container">
+                        <div class="feedback-item-content">
+                            <div class="feedback-item-content-tittle">
+                                <h3>Sergiy Zuzak</h3>
+                                <img src="img/star2.svg" alt="Star">
+                            </div>
+                            <span>3 тижні тому</span>
+                            <p>Дуже високоякісний сервіс в першу чергу, і знання справи на достойному рівні. Хлопці
+                                ставили
+                                мені систему на 15кв сонця + акб. Нарікань нема. Приємно те, що не виявляють бажання
+                                заробити більше ніж треба. При підборі і при покращенні системи завжди говорили - це
+                                переплата вам таке не треба, під ваші потреби ось цього досить. Дуже рекомендую</p>
                         </div>
-                        <span>3 тижні тому</span>
-                        <p>Дуже високоякісний сервіс в першу чергу, і знання справи на достойному рівні. Хлопці ставили
-                            мені систему на 15кв сонця + акб. Нарікань нема. Приємно те, що не виявляють бажання
-                            заробити більше ніж треба. При підборі і при покращенні системи завжди говорили - це
-                            переплата вам таке не треба, під ваші потреби ось цього досить. Дуже рекомендую</p>
-                    </div>
-                    <div class="feedback-item-link">
-                        <a href="#">
-                            <img src="img/go.svg" alt="google">
-                        </a>
+                        <div class="feedback-item-link">
+                            <a href="#">
+                                <img src="img/go.svg" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1702,9 +1853,53 @@
                 <img src="img/case-box-btn.svg" alt="Показати ще 3">
             </button>
         </div>
+        <div class="feedback-pagination"></div>
     </section>
 
     <footer>
+        <div class="sub-menu">
+            <div class="drop-down-menu">
+                <div class="modal-img modal-img2">
+                    <img src="img/modal-img.svg" alt="image">
+                    <h2>Контакти та представництва</h2>
+                </div>
+                <h4>київ</h4>
+                <ul>
+                    <li>
+                        <img src="img/location.svg" alt="вул. Пшенична, 8">
+                        вул. Пшенична, 8
+                    </li>
+                    <li>
+                        <a href="tel:0971247150">+38 (097) 124 71 50</a>
+                    </li>
+                    <li>
+                        <a href="tel:0953111809">+38 (095) 311 18 09</a>
+                    </li>
+                </ul>
+                <h4>полтава</h4>
+                <ul>
+                    <li>
+                        <img src="img/location.svg" alt="вул. Пшенична, 8">
+                        Полтавська обл., <br> м. Полтава
+                    </li>
+                    <li>
+                        <a href="tel:0505582442">+38 (050) 558 24 42</a>
+                    </li>
+                </ul>
+                <h4>одеса</h4>
+                <ul>
+                    <li>
+                        <img src="img/location.svg" alt="вул. Пшенична, 8">
+                        Одеська обл., <br>
+                        м. Одеса
+                    </li>
+                    <li>
+                        <a href="tel:0977166874">+38 (097) 716 68 74</a>
+                    </li>
+                </ul>
+            </div>
+          <button class="close-submenu modal-img2 "><img src="img/close2.svg" alt=""></button>
+        </div>
         <div class="footer-position">
             <div class="footer-position1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="887" viewBox="0 0 1920 887" fill="none">
@@ -1751,15 +1946,19 @@
                             <a href="#">Гарантії</a>
                         </li>
                     </ul>
+                    <a href="#form" class="footer-content-btn">Замовити консультацію
+                        <img src="img/input-submit.svg" alt="submit">
+                    </a>
                 </div>
                 <div class="footer-content-left-contact">
                     <div class="footer-content-left-contact-adress">
-                        <div>м. Київ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                                viewBox="0 0 16 17" fill="none">
+                        <div class="submenu-trigger submenu-trigger2">м. Київ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
                                 <path
                                     d="M13.177 6.32155L8.17701 11.3215C8.1538 11.3448 8.12622 11.3632 8.09587 11.3758C8.06553 11.3884 8.03299 11.3949 8.00014 11.3949C7.96729 11.3949 7.93475 11.3884 7.9044 11.3758C7.87405 11.3632 7.84648 11.3448 7.82326 11.3215L2.82326 6.32155C2.80004 6.29832 2.78161 6.27074 2.76904 6.24039C2.75647 6.21005 2.75 6.17752 2.75 6.14467C2.75 6.11182 2.75647 6.07929 2.76904 6.04895C2.78161 6.0186 2.80004 5.99102 2.82326 5.9678C2.87017 5.92089 2.9338 5.89453 3.00014 5.89453C3.03299 5.89453 3.06551 5.901 3.09586 5.91357C3.12621 5.92614 3.15379 5.94457 3.17701 5.9678L8.00014 10.7909L12.8233 5.9678C12.8465 5.94457 12.8741 5.92614 12.9044 5.91357C12.9348 5.901 12.9673 5.89453 13.0001 5.89453C13.033 5.89453 13.0655 5.901 13.0959 5.91357C13.1262 5.92614 13.1538 5.94457 13.177 5.9678C13.2002 5.99102 13.2187 6.0186 13.2312 6.04895C13.2438 6.07929 13.2503 6.11182 13.2503 6.14467C13.2503 6.17752 13.2438 6.21005 13.2312 6.24039C13.2187 6.27074 13.2002 6.29832 13.177 6.32155Z"
                                     fill="#FDE614" />
                             </svg>
+                            <img src="img/modal.svg" alt="modal">
                             <div class="drop-down-menu drop-down-menu2">
                                 <h4>київ</h4>
                                 <ul>
@@ -1795,7 +1994,8 @@
                                         <a href="tel:0977166874">+38 (097) 716 68 74</a>
                                     </li>
                                 </ul>
-                            </div></div>
+                            </div>
+                        </div>
                         <p>вул. Пшенична, 8</p>
                     </div>
                     <p>Працюємо щодня <br>
@@ -1902,96 +2102,6 @@
 
 
 
-
-
-
-
-    <!-- Модальные окна сертификатов -->
-
-    <div class="hidden">
-        <div class="modal" id="certificates1">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
-            </button>
-            <img src="img/certificates1.png" alt="Сертифікати">
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal" id="certificates2">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
-            </button>
-            <img src="img/certificates2.png" alt="Сертифікати">
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal" id="certificates3">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
-            </button>
-            <img src="img/certificates3.png" alt="Сертифікати">
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal" id="certificates4">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
-            </button>
-            <img src="img/certificates4.png" alt="Сертифікати">
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal" id="certificates5">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
-            </button>
-            <img src="img/certificates5.png" alt="Сертифікати">
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal" id="certificates6">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
-            </button>
-            <img src="img/certificates6.png" alt="Сертифікати">
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal" id="certificates7">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
-            </button>
-            <img src="img/certificates1.png" alt="Сертифікати">
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal" id="certificates8">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
-            </button>
-            <img src="img/certificates3.png" alt="Сертифікати">
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal" id="certificates9">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
-            </button>
-            <img src="img/certificates2.png" alt="Сертифікати">
-        </div>
-    </div>
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -2003,6 +2113,8 @@
     <script src="script/sun.js"></script>
     <script src="script/hero-animation.js"></script>
     <script src="script/case-slider.js"></script>
+    <script src="script/certificates-slider.js"></script>
+    <script src="script/feedback-slider.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -2026,23 +2138,61 @@
 
     </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Обработчик для клика на ссылку
-      document.querySelectorAll('.scroll-anchor').forEach(function(anchor) {
-        anchor.addEventListener('click', function(event) {
-          event.preventDefault(); // Отменить стандартное действие ссылки
-          var target = document.querySelector(this.getAttribute('href')); // Получить элемент-якорь
-          if (target) {
-            var offset = target.getBoundingClientRect().top - 100; // Вычислить позицию с учетом отступа
-            window.scrollTo({
-              top: offset + window.scrollY,
-              behavior: 'smooth' // Плавная прокрутка
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Обработчик для клика на ссылку
+            document.querySelectorAll('.scroll-anchor').forEach(function (anchor) {
+                anchor.addEventListener('click', function (event) {
+                    event.preventDefault(); // Отменить стандартное действие ссылки
+                    var target = document.querySelector(this.getAttribute('href')); // Получить элемент-якорь
+                    if (target) {
+                        var offset = target.getBoundingClientRect().top - 100; // Вычислить позицию с учетом отступа
+                        window.scrollTo({
+                            top: offset + window.scrollY,
+                            behavior: 'smooth' // Плавная прокрутка
+                        });
+                    }
+                });
             });
-          }
         });
-      });
-    });
+    </script>
+
+
+    <script>
+$(document).ready(function() {
+  $('.burger-icon').click(function() {
+    $(this).toggleClass('open');
+    $('.burger-menu').toggleClass('open');
+  });
+
+  $('.submenu-trigger').click(function() {
+    $('.sub-menu').toggleClass('open');
+  });
+
+  $('.submenu-trigger').click(function() {
+    $('.body').toggleClass('open');
+  });
+
+
+  $('.burger-icon').click(function() {
+    $('.body').toggleClass('open');
+  });
+
+  $('.close-submenu').click(function() {
+    $('.sub-menu').removeClass('open');
+  });
+
+  $('.burger-icon').click(function() {
+    $('.sub-menu').removeClass('open');
+  });
+
+  $('.modal-img2 ').click(function() {
+    $('.body').removeClass('open');
+  });
+
+});
+
+
     </script>
 </body>
 

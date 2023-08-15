@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    if (window.innerWidth >= 1200) {
     var itemsToShow = 3; // Number of items to show on each click
     var currentIndex = 0;
 
@@ -25,4 +26,5 @@ $(document).ready(function () {
     });
 
     showItems(); // Show initial items
+}
 });
