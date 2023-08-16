@@ -1,5 +1,44 @@
 jQuery(document).ready(function ($) {
 
+    // инициализируем swiper
+    $("#courder").on("click", ".stories-btn", function () {
+        let modalId = $(this).data("src");
+        console.log(modalId);
+
+        let modSlider = $(modalId).find(".modSlider")[0];
+
+        if (modSlider) {
+            console.log("Found modSlider:", modSlider);
+            let swiper = new Swiper(modSlider, {
+                on: {
+                    init: function () {
+                        $(modalId + ' .navSlider .nav-slide').eq(0).addClass('active');
+                    },
+                    slideChange: function () {
+                        var activeIndex = this.activeIndex;
+                        $(modalId + ' .navSlider .nav-slide').eq(activeIndex).addClass('active').siblings().removeClass('active');
+                    }
+                },
+                navigation: {
+                    nextEl: modalId + ' .progect-next',
+                    prevEl: modalId + ' .progect-prev',
+                },
+            });
+
+            // кликаем по миниатюре
+            $(modalId + ' .navSlider .nav-slide').click(function () {
+                var index = $(this).index();
+                swiper.slideTo(index);
+            });
+
+        } else {
+            console.log("modSlider not found");
+        }
+    });
+
+
+
+    // выводим проекты
     let countProgect;
     const courderDiv = $('#courder');
     const modalProgect = $('#modalProgect');
@@ -23,7 +62,7 @@ jQuery(document).ready(function ($) {
             itemDiv.html(`           
                 <div class="case-box-container">
 
-                    <a data-fancybox data-src="#box-${i}" data-modal="false" href="javascript:;" class="stories-btn"></a>
+                    <a data-fancybox data-src="#box-${i}" data-modal="true" href="javascript:;" class="stories-btn"></a>
 
                     <h3>${item.title}</h3>
 
@@ -71,7 +110,7 @@ jQuery(document).ready(function ($) {
         }
 
 
-
+        // подгружаем проекты
         if (window.innerWidth >= 1200) {
             var itemsToShow = 3; // Number of items to show on each click
             var currentIndex = 0;
@@ -125,6 +164,10 @@ jQuery(document).ready(function ($) {
 
             const itemDiv = $('<div id="box-' + i + '" style="display:none;" class="progectModal">');
             const imageLinks = item.images.map(image => `<div class="swiper-slide"><img src="${image}" alt="Сонячні станції"></div>`).join('');
+            const imageNav = item.images.map(image => `<div class="nav-slide"><img src="${image}" alt="Сонячні станції"></div>`).join('');
+            const countImages = item.images.length;
+            const imageNavElement = countImages > 1 ? `<div class="navSlider">${imageNav}</div>` : '';
+
             itemDiv.html(` 
                     <div class="progectModalInner">
 
@@ -161,12 +204,19 @@ jQuery(document).ready(function ($) {
                                 <p>Економія/рік</p>
                             </div>
                         </div>
+                        <div class="innerSliderProgect">
+                            <div class="modSlider swiper ">
+                                <div class="swiper-wrapper">${imageLinks}</div>   
+                            </div>
 
-                        <div class="modSlider">
-                            <div class="swiper-wrapper">
-                                ${imageLinks}
-                            </div>   
+                            <div class="progect-next"><img src="img/progect-next.svg" alt="next"></div>
+                            <div class="progect-prev"><img src="img/progect-prev.svg" alt="prev"></div>
                         </div>
+
+                        ${imageNavElement}
+
+                        <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg></button>
+
 
                     </div><!-- //progectModalInner --> 
 
@@ -187,14 +237,23 @@ jQuery(document).ready(function ($) {
 
 
 
-    var modSliders = document.querySelectorAll('.modSlider');
 
-    modSliders.forEach(function(modSlider) {
-      new Swiper(modSlider, {
-        // Здесь вы можете настроить параметры слайдера
-        // Например: slidesPerView, autoplay, navigation и т.д.
-      });
-    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

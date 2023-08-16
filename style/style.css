@@ -2298,6 +2298,11 @@ form label {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    align-self: stretch;
+    overflow: hidden;
 }
 
 .argument-box-right-container-emodji {
@@ -5018,7 +5023,7 @@ footer {
     }
 
     .case-box-item-block1-container {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .case-box-item-block2 {
@@ -6873,13 +6878,13 @@ footer {
         width: max-content;
     }
     .argument-position1 {
-        width: 2119.725px;
-        height: 100%;
+        width: 100%;
+       
         top: 0;
         left: 0;
         background: url(../img/icons1.svg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
     .case-position1 {
         width: 100%;
@@ -6890,9 +6895,6 @@ footer {
     }
     .case-position1 svg {
         display: none;
-    }
-    .argument {
-        overflow: hidden;
     }
     .argument-position1 svg {
         display: none;
@@ -7068,6 +7070,85 @@ footer {
     .case-box-item-block1-container {
         font-size: 9px;
     }
+    .case-box-slider {
+        width: auto;
+    }
+    .certificates-item {
+        width: 170px !important;
+    }
+    .case {
+        padding-left: 0;
+    }
+    .case-left-tittle {
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+    .feedback-box {
+        width: 100%;
+    }
+    .feedback-pagination .swiper-pagination-bullet-active {
+        width: 10%;
+    }
+    .feedback-slider {
+        gap: 0;
+    }
+    .certificates {
+        padding-left: 0;
+    }
+    .certificates-tittle {
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+    .certificates-container {
+        width: 100%;
+        padding-left: 32px;
+        box-sizing: border-box;
+        gap: 0;
+    }
+    .certificates-pagination {
+        justify-content: center;
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+    .certificates-pagination .swiper-pagination-bullet-active {
+        width: 20%;
+    }
+    .case-box {
+        width: 100%;
+        box-sizing: border-box;
+        gap: 0;
+        display: block;
+    }
+    .case-box-slider {
+        width: auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0;
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+    .case-box {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden; /* Добавляем это свойство для обрезания лишнего контента */
+      }
+      .TitleProgectModal {
+        padding-right: 64px;
+      }
+      .topProgectModal {
+        padding-right: 0;
+      }
+      .case-box-slider {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0;
+        padding-left: 32px;
+        box-sizing: border-box;
+        transition: transform 0.3s ease; /* Добавляем анимацию перехода */
+      }
+      
 }
 
 @media (max-width: 768px) {
@@ -7448,24 +7529,5 @@ footer {
     }
     .footer-copy {
         width: 60%;
-    }
-    .case-box-slider {
-        width: auto;
-    }
-    .certificates-item {
-        width: 170px !important;
-    }
-    .case {
-        padding-left: 0;
-    }
-    .case-left-tittle {
-        padding-left: 32px;
-        box-sizing: border-box;
-    }
-    .feedback-box {
-        width: 100%;
-    }
-    .feedback-pagination  {
-        
     }
 }

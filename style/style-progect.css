@@ -1,6 +1,7 @@
 .progectModal.fancybox-content {
 	max-width: 1116px;
 	padding: 32px 59px;
+	width: 100%;
 }
 
 .progectModal img {
@@ -16,6 +17,7 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: 150%;
+	padding-right: 32px;
 }
 
 .topProgectModal {
@@ -28,6 +30,90 @@
 	margin-bottom: 24px;
 }
 
+.modSlider.swiper {
+	overflow: hidden;
+}
+
+.nav-slide {
+	width: 71px;
+	height: 56px;
+	overflow: hidden;
+	margin-right: 24px;
+    margin-bottom: 16px;
+	border-radius: 4px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.nav-slide img {
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+
+.navSlider {
+	display: flex;
+	margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.nav-slide.active {
+	opacity: 1;
+}
+
+.progectModalInner .fancybox-button.fancybox-close-small {
+	border-radius: 4px;
+	background: #F7BB6F;
+	width: 48px;
+	height: 48px;
+	opacity: 1;
+	top: 24px;
+	right: 24px;
+}
+
+.labelModal {
+	margin-right: 50px;
+}
+
+.progect-next, .progect-prev {
+	display: flex;
+	padding: 12px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	position: absolute;
+	background: rgba(255,255,255,0.5);
+	top: 0;
+	z-index: 10;	
+	height: 100%;
+	cursor: pointer;
+    transition: 0.2s all;
+}
+
+.progect-next {
+    right: 0;
+}
+
+.progect-prev { 
+    left: 0;
+}
+
+.innerSliderProgect {
+	position: relative;
+}
+
+.progect-next:hover, .progect-prev:hover {
+	background: rgba(255,255,255,0.7);
+}
+
+.innerSliderProgect .swiper-button-disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.innerSliderProgect .swiper-button-disabled:hover {
+    background: rgba(255,255,255,0.5) !important;
+}
 
 
 
@@ -40,7 +126,36 @@
 
 
 
+/*? responsive ***********************************************************************************/
+
+@media (max-width: 768px) {  
+
+    .topProgectModal {
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0 64px 0 0;
+    }
+
+    .TitleProgectModal {
+        padding-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .progectModal.fancybox-content {
+        padding: 32px;
+    }
+
+    .nav-slide {
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+
+    .progect-next, .progect-prev {
+        display: none;
+    }
 
 
 
 
+} 
+/*? //max-width: 768px */  
