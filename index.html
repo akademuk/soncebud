@@ -18,16 +18,16 @@
         <div class="main-menu">
             <ul class="header-navs">
                 <li>
-                    <a href="#" class="btn-link">Етапи співпраці</a>
+                    <a href="#steps" class="btn-link">Етапи співпраці</a>
                 </li>
                 <li>
-                    <a href="#" class="btn-link">Прорахунок</a>
+                    <a href="#request" class="btn-link">Прорахунок</a>
                 </li>
                 <li>
-                    <a href="#" class="btn-link">Реалізовані об'єкти</a>
+                    <a href="#case" class="btn-link">Реалізовані об'єкти</a>
                 </li>
                 <li>
-                    <a href="#" class="btn-link">Гарантії</a>
+                    <a href="#about-us" class="btn-link">Гарантії</a>
                 </li>
             </ul>
             <a href="#advice" class="header-btn-button">
@@ -45,10 +45,10 @@
                 </div>
             </div>
         </div>
-        <div class="sub-menu">
+        <div class="sub-menu sub-menu3">
             <div class="drop-down-menu">
                 <div class="modal-img">
-                    <img src="img/modal-img.svg" alt="image">
+                    <img src="img/Graphics2.svg" alt="image">
                     <h2>Контакти та представництва</h2>
                 </div>
                 <h4>київ</h4>
@@ -87,7 +87,7 @@
                     </li>
                 </ul>
             </div>
-          <button class="close-submenu"><img src="img/arrow.svg" alt=""></button>
+          <!-- <button class="close-submenu"><img src="img/arrow.svg" alt=""></button> -->
         </div>
     </div>
 
@@ -153,21 +153,22 @@
         <header class="header">
             <div class="wrapper">
                 <div class="header-logo">
-                    <img src="img/logo.svg" alt="сонцебуд" class="header-logo-des">
-                    <img src="img/logo-mob.svg" alt="сонцебуд" class="header-logo-mob">
+                    <img src="img/logo.svg" alt="сонцебуд" class="header-logo-des header-logo-none">
+                    <img src="img/logo-mob.svg" alt="сонцебуд" class="header-logo-mob header-logo-none">
+                    <button class="close-submenu close-submenu-header"><img src="img/arrow.svg" alt=""></button>
                 </div>
                 <ul class="header-navs">
                     <li>
-                        <a href="#">Етапи співпраці</a>
+                        <a href="#steps">Етапи співпраці</a>
                     </li>
                     <li>
-                        <a href="#">Прорахунок</a>
+                        <a href="#request">Прорахунок</a>
                     </li>
                     <li>
-                        <a href="#">Реалізовані об'єкти</a>
+                        <a href="#case">Реалізовані об'єкти</a>
                     </li>
                     <li>
-                        <a href="#">Гарантії</a>
+                        <a href="#about-us">Гарантії</a>
                     </li>
                 </ul>
                 <div class="header-btn">
@@ -377,7 +378,7 @@
         </div>
     </section>
 
-    <section class="steps">
+    <section class="steps" id="steps">
         <div class="steps-position">
             <div class="steps-position1"></div>
             <div class="steps-position2"></div>
@@ -789,7 +790,7 @@
         </form>
     </section>
 
-    <section class="case">
+    <section class="case" id="case">
         <div class="case-position">
             <div class="case-position1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1296" viewBox="0 0 1920 1296" fill="none">
@@ -1305,7 +1306,7 @@
         </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="about-us-position">
             <div class="about-us-position1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1918" height="1063" viewBox="0 0 1918 1063" fill="none">
@@ -1861,7 +1862,7 @@
         <div class="sub-menu sub-menu2">
             <div class="drop-down-menu">
                 <div class="modal-img modal-img2">
-                    <img src="img/modal-img.svg" alt="image">
+                    <img src="img/Graphics2.svg" alt="image">
                     <h2>Контакти та представництва</h2>
                 </div>
                 <h4>київ</h4>
@@ -1935,16 +1936,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#">Етапи співпраці</a>
+                            <a href="#steps">Етапи співпраці</a>
                         </li>
                         <li>
-                            <a href="#">Прорахунок</a>
+                            <a href="#request">Прорахунок</a>
                         </li>
                         <li>
-                            <a href="#">Реалізовані об'єкти</a>
+                            <a href="#case">Реалізовані об'єкти</a>
                         </li>
                         <li>
-                            <a href="#">Гарантії</a>
+                            <a href="#about-us">Гарантії</a>
                         </li>
                     </ul>
                     <a href="#form" class="footer-content-btn">Замовити консультацію
@@ -2169,18 +2170,24 @@ $(document).ready(function() {
   });
 
   $('.submenu-trigger').click(function() {
-    $('.sub-menu').toggleClass('open');
+    $('.sub-menu3').toggleClass('open');
+  });
+  $('.submenu-trigger2').click(function() {
+    $('.sub-menu2').toggleClass('open');
   });
   $('.submenu-trigger2').click(function() {
     $('.body').toggleClass('open');
   });
 
   $('.close-submenu').click(function() {
-    $('.sub-menu').removeClass('open');
+    $('.sub-menu3').removeClass('open');
   });
 
   $('.modal-img2').click(function() {
     $('.body').removeClass('open');
+  });
+  $('.modal-img2').click(function() {
+    $('.sub-menu2').removeClass('open');
   });
 
   $('.btn-link').click(function() {
@@ -2192,6 +2199,46 @@ $(document).ready(function() {
 });
 
     </script>
+
+<script>
+    const submenuTrigger = document.querySelector('.submenu-trigger');
+    const closeSubmenuHeader = document.querySelector('.close-submenu-header');
+    const burgerIcon = document.querySelector('.burger-icon');
+    const headerImages = document.querySelectorAll('.header-logo-none');
+    const burgerIcon2 = document.querySelector('.header-logo-mob');
+    const subMenu = document.querySelector('.sub-menu');
+
+    submenuTrigger.addEventListener('click', () => {
+      headerImages.forEach(img => {
+        img.style.display = 'none';
+      });
+      closeSubmenuHeader.style.display = 'block';
+    });
+  
+    closeSubmenuHeader.addEventListener('click', () => {
+      headerImages.forEach(img => {
+        burgerIcon2.style.display = 'block';
+      });
+      closeSubmenuHeader.style.display = 'none';
+    });
+  
+    burgerIcon.addEventListener('click', () => {
+      if (subMenu.classList.contains('open')) {
+        if (burgerIcon.classList.contains('open')) {
+          burgerIcon2.style.display = 'block';
+          closeSubmenuHeader.style.display = 'none';
+        } else {
+          burgerIcon2.style.display = 'none';
+          closeSubmenuHeader.style.display = 'none';
+        }
+      }
+    });
+</script>
+
+
+
+
+
 </body>
 
 </html>
