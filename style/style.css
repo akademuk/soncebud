@@ -4192,17 +4192,49 @@ footer {
 .partners-box2 {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
+.argument-tittle-img {
+    height: 63px;
+}
+.argument-tittle-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+.argument-tittle {
+    width: 1116px;
+}
+.case-left-tittle-img {
+    height: 63px;
+}
+.case-left-tittle-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+.request-left-tittle-img {
+    height: 63px;
+}
+.request-left-tittle-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+.about-us-left-tittle-logo-img {
+    height: 63px;
+}
+.about-us-left-tittle-logo-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+.feedback-tittle-left-logo-img {
+    height: 63px;
+}
+.feedback-tittle-left-logo-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
 
 
 
