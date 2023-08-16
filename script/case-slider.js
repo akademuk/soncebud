@@ -4,17 +4,11 @@ if (window.matchMedia("(max-width: 1200px)").matches) {
     slidesPerView: 'auto', // Автоматически определит количество слайдов на экране
     spaceBetween: 16, // Расстояние между слайдами (можете настроить по своему вкусу)
     loop: false, // Отключение бесконечной петли
+
     pagination: {
       el: '.case-pagination',
       clickable: true,
     },
-    breakpoints: {
-      768: {
-        slidesPerView: 1,
-        centeredSlides: true,
-        spaceBetween: 0,
-      },
-    }
 });
 }
   
