@@ -7063,6 +7063,9 @@ footer {
         height: 438.805px;
         top: -160px;
     }
+    .sun {
+        transform: translate(5%, 20%);
+    }
 }
 
 @media (max-width: 768px) {
@@ -7177,9 +7180,6 @@ footer {
         overflow: hidden;
     }
 
-    .certificates {
-        overflow: hidden;
-    }
 
     .steps {
         overflow: hidden;
@@ -7387,5 +7387,79 @@ footer {
     .steps-right-column2 {
         width: 100%;
         flex-direction: row;
+    }
+    .steps-position2 {
+        width: 450px;
+        height: 729.406px;
+        border-radius: 729.406px;
+    }
+    .steps-position1 {
+        width: 550px;
+        height: 891.496px;
+        border-radius: 891.496px;
+    }
+    .form-input-submit {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .steps-left-bottom-promo {
+        height: 216px;
+        padding: 32px 16px;
+        gap: 16px;
+        box-sizing: border-box;
+    }
+    .swiper-pagination-bullet-active {
+        width: 5%;
+    }
+    .case-position1 {
+        width: 100%;
+        height: 100%;
+        background: url(../img/icons2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 50%;
+    }
+    .argument-tittle {
+        width: 100%;
+    }
+    .argument-position1 {
+        top: -5%;
+        width: 100%;
+    }
+    .argument {
+        overflow: initial;
+    }
+    .about-us-position1 {
+        width: 100%;
+    }
+    .about-us-right-content p span {
+        font-weight: 400;
+        color: #282828;
+    }
+    .form-card-container-position3 {
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+    .form-card-container-right form .form-input-submit {
+        margin-right: auto;
+        margin-left: 0;
+    }
+    .certificates-position1 {
+        left: 0;
+    }
+    .form-card-container-position2 {
+        top: -260px;
+    }
+    .form-card-container-position1 {
+        top: auto;
+        bottom: -450px;
+    }
+    .feedback-position1 {
+        left: -230%;
+    }
+    .footer-copy {
+        width: 60%;
     }
 }
