@@ -1,0 +1,251 @@
+[
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Київ",
+        "category": "Сонячна станція",
+        "power": "8 кВт",
+        "generation": "9 300 кВт",
+        "economy": "55 800",
+        "images": [
+            "img/object/1/p-1.jpg",
+            "img/object/1/p-2.jpg",
+            "img/object/1/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Київ",
+        "category": "Сонячна станція",
+        "power": "24 кВт",
+        "generation": "28 000 кВт",
+        "economy": "168 000",
+        "images": [
+            "img/object/2/p-1.jpg",
+            "img/object/2/p-2.jpg",
+            "img/object/2/p-3.jpg",
+            "img/object/2/p-4.jpg",
+            "img/object/2/p-5.jpg",
+            "img/object/2/p-6.jpg",
+            "img/object/2/p-7.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Київ",
+        "category": "Сонячна станція",
+        "power": "10 кВт",
+        "generation": "12 000 кВт",
+        "economy": "72 000",
+        "images": [
+            "img/object/3/p-1.jpg",
+            "img/object/3/p-2.jpg",
+            "img/object/3/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Київська обл.",
+        "category": "Сонячна станція",
+        "power": "15 кВт",
+        "generation": "17 000 кВт",
+        "economy": "102 000",
+        "images": [
+            "img/object/4/p-1.jpg",
+            "img/object/4/p-2.jpg",
+            "img/object/4/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "м. Білгородка",
+        "category": "Сонячна станція",
+        "power": "15 кВт",
+        "generation": "16 000 кВт",
+        "economy": "95 000",
+        "images": [
+            "img/object/5/p-1.jpg",
+            "img/object/5/p-2.jpg",
+            "img/object/5/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Чернігівська обл.",
+        "category": "Сонячна станція",
+        "power": "10 кВт",
+        "generation": "11 000 кВт",
+        "economy": "66 000",
+        "images": [
+            "img/object/6/p-1.jpg",
+            "img/object/6/p-2.jpg",
+            "img/object/6/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Київська обл.",
+        "category": "Сонячна станція",
+        "power": "10 кВт",
+        "generation": "12 400 кВт",
+        "economy": "74 400",
+        "images": [
+            "img/object/7/p-1.jpg",
+            "img/object/7/p-2.jpg",
+            "img/object/7/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Промислова станція під власне споживання",
+        "city": "Чернігівська обл.",
+        "category": "Промислова станція",
+        "power": "30 кВт + 30 кВт",
+        "generation": "70 200 кВт",
+        "economy": "421 200",
+        "images": [
+            "img/object/8/p-1.jpg",
+            "img/object/8/p-2.jpg",
+            "img/object/8/p-3.jpg",
+            "img/object/8/p-4.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Житомирська обл.",
+        "category": "Сонячна станція",
+        "power": "20 кВт",
+        "generation": "23 400 кВт",
+        "economy": "140 400",
+        "images": [
+            "img/object/9/p-1.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Житомирська обл.",
+        "category": "Сонячна станція",
+        "power": "30 кВт",
+        "generation": "36 000 кВт",
+        "economy": "216 000",
+        "images": [
+            "img/object/10/p-1.jpg",
+            "img/object/10/p-2.jpg",
+            "img/object/10/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Одеська обл.",
+        "category": "Сонячна станція",
+        "power": "30 кВт",
+        "generation": "39 000 кВт",
+        "economy": "234 000",
+        "images": [
+            "img/object/11/p-1.jpg",
+            "img/object/11/p-2.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Одеська обл.",
+        "category": "Сонячна станція",
+        "power": "30 кВт",
+        "generation": "39 000 кВт",
+        "economy": "237 000",
+        "images": [
+            "img/object/12/p-1.jpg",
+            "img/object/12/p-2.jpg",
+            "img/object/12/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Промислова станція під власне споживання",
+        "city": "Полтавська обл.",
+        "category": "Промислова станція",
+        "power": "30 кВт",
+        "generation": "36 000 кВт",
+        "economy": "216 000",
+        "images": [
+            "img/object/13/p-1.jpg",
+            "img/object/13/p-2.jpg",
+            "img/object/13/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Промислова станція під власне споживання",
+        "city": "Донецька обл.",
+        "category": "Промислова станція",
+        "power": "30 кВт",
+        "generation": "34 000 кВт",
+        "economy": "204 000",
+        "images": [
+            "img/object/14/p-1.jpg",
+            "img/object/14/p-2.jpg",
+            "img/object/14/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Промислова станція під власне споживання",
+        "city": "Донецька обл.",
+        "category": "Промислова станція",
+        "power": "30 кВт + 30 кВт",
+        "generation": "71 000 кВт",
+        "economy": "426 000",
+        "images": [
+            "img/object/15/p-1.jpg",
+            "img/object/15/p-2.jpg",
+            "img/object/15/p-3.jpg",
+            "img/object/15/p-4.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Київська обл.",
+        "category": "Сонячна станція",
+        "power": "15 кВт",
+        "generation": "16 800 кВт",
+        "economy": "100 800",
+        "images": [
+            "img/object/16/p-1.jpg",
+            "img/object/16/p-2.jpg",
+            "img/object/16/p-3.jpg"
+        ]
+    },
+    {
+        "title": "Сонячні панелі для приватного заміського будинку",
+        "city": "Київська обл.",
+        "category": "Сонячна станція",
+        "power": "15 кВт + 15 кВт",
+        "generation": "34 000 кВт",
+        "economy": "204 000",
+        "images": [
+            "img/object/17/p-1.jpg"
+        ]
+    },
+    {
+        "title": "Промислова станція під власне споживання",
+        "city": "Полтавська обл.",
+        "category": "Промислова станція",
+        "power": "30 кВт",
+        "generation": "36 000 кВт",
+        "economy": "216 000",
+        "images": [
+            "img/object/18/p-1.jpg",
+            "img/object/18/p-2.jpg"
+        ]
+    },
+    {
+        "title": "Промислова станція під власне споживання",
+        "city": "Київська обл.",
+        "category": "Промислова станція",
+        "power": "30 кВт",
+        "generation": "35 000 кВт",
+        "economy": "210 000",
+        "images": [
+            "img/object/19/p-1.jpg",
+            "img/object/19/p-2.jpg",
+            "img/object/19/p-3.jpg",
+            "img/object/19/p-4.jpg",
+            "img/object/19/p-5.jpg"
+        ]
+    }
+]

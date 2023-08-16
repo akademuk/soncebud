@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
@@ -30,12 +31,12 @@
                     <a href="index.html#about-us" class="btn-link">Гарантії</a>
                 </li>
             </ul>
-            <a href="#advice" class="header-btn-button">
+            <a href="#" class="header-btn-button consultation-btn">
                 Консультація
                 <img src="img/message.svg" alt="Консультація">
             </a>
             <div class="main-menu-flex">
-                <button class="submenu-trigger">м. Київ 
+                <button class="submenu-trigger">м. Київ
                     <img src="img/modal2.svg" alt="м. Київ ">
                 </button>
                 <p>вул. Пшенична, 8</p>
@@ -87,7 +88,31 @@
                     </li>
                 </ul>
             </div>
-          <!-- <button class="close-submenu"><img src="img/arrow.svg" alt=""></button> -->
+            <!-- <button class="close-submenu"><img src="img/arrow.svg" alt=""></button> -->
+        </div>
+        <div class="modal-consultation">
+            <div class="modal-consultation-container">
+                <h2>Замовлення консультації інженера</h2>
+                <form action="" id="ajax-contact-form4">
+                    <label for="modal-name">Ваше ім'я</label>
+                    <div class="form-input">
+                        <input type="text" id="modal-name" name="name" placeholder="Наприклад: Григорій Сковорода"
+                            required />
+                        <img src="img/form-name.svg" alt="Ваше ім'я">
+                    </div>
+                    <label for="modal-tel">Ваш телефон</label>
+                    <div class="form-input">
+                        <input type="text" id="modal-tel" name="phone" placeholder="+38 (ХХХ) ХХХ - ХХ - ХХ" required />
+                        <img src="img/form-tel.svg" alt="Ваш телефон">
+                    </div>
+                    <input name="url" type="hidden">
+                    <div class="form-input-submit">
+                        <input type="submit" value="Зв'яжіться зі мною" name="submit">
+                        <img src="img/input-submit.svg" alt="submit">
+                    </div>
+                </form>
+                <img src="img/modal.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -198,7 +223,7 @@
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
-                  </div>
+                </div>
             </div>
         </header>
     </div>
@@ -206,15 +231,45 @@
     <section class="feedback-hero">
         <h1>Дякуємо!</h1>
         <h2>Ми отримали вашу заявку</h2>
-        <p>Наш спеціаліст незабаром зв'яжеться з вами за вказаним номером телефону та обговорить усі деталі нашої пропозиції</p>
+        <p>Наш спеціаліст незабаром зв'яжеться з вами за вказаним номером телефону та обговорить усі деталі нашої
+            пропозиції</p>
         <a href="index.html">
-            <img src="img/arrow.svg" alt="">    
+            <img src="img/arrow.svg" alt="">
             Повернутися на головну
         </a>
         <img src="img/feedback-hero.svg" alt="Дякуємо!">
     </section>
 
     <footer class="feedback-footer">
+        <div class="modal-consultation2">
+            <div class="modal-consultation-container">
+                <div class="modal-consultation2-logo">
+                    <img src="img/logo-mob.svg" alt="logo">
+                    <button class="modal-consultation-close"><img src="img/close.svg" alt=""></button>
+                </div>
+                <h2>Замовлення консультації інженера</h2>
+                <form action="" id="ajax-contact-form5">
+                    <label for="modal2-name">Ваше ім'я</label>
+                    <div class="form-input">
+                        <input type="text" id="modal2-name" name="name" placeholder="Наприклад: Григорій Сковорода"
+                            required />
+                        <img src="img/form-name.svg" alt="Ваше ім'я">
+                    </div>
+                    <label for="modal2-tel">Ваш телефон</label>
+                    <div class="form-input">
+                        <input type="text" id="modal2-tel" name="phone" placeholder="+38 (ХХХ) ХХХ - ХХ - ХХ"
+                            required />
+                        <img src="img/form-tel.svg" alt="Ваш телефон">
+                    </div>
+                    <input name="url" type="hidden">
+                    <div class="form-input-submit">
+                        <input type="submit" value="Зв'яжіться зі мною" name="submit">
+                        <img src="img/input-submit.svg" alt="submit">
+                    </div>
+                </form>
+                <img src="img/modal.png" alt="">
+            </div>
+        </div>
         <div class="sub-menu sub-menu2">
             <div class="drop-down-menu">
                 <div class="modal-img modal-img2">
@@ -256,7 +311,7 @@
                     </li>
                 </ul>
             </div>
-          <button class="close-submenu modal-img2 "><img src="img/close2.svg" alt=""></button>
+            <button class="close-submenu modal-img2 "><img src="img/close2.svg" alt=""></button>
         </div>
         <div class="footer-position">
             <div class="footer-position1">
@@ -304,14 +359,14 @@
                             <a href="index.html#about-us">Гарантії</a>
                         </li>
                     </ul>
-                    <a href="#form" class="footer-content-btn">Замовити консультацію
+                    <button class="footer-content-btn consultation-btn2">Замовити консультацію
                         <img src="img/input-submit.svg" alt="submit">
-                    </a>
+                    </button>
                 </div>
                 <div class="footer-content-left-contact">
                     <div class="footer-content-left-contact-adress">
-                        <div class="submenu-trigger submenu-trigger2">м. Київ <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
-                                fill="none">
+                        <div class="submenu-trigger submenu-trigger2">м. Київ <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="17" viewBox="0 0 16 17" fill="none">
                                 <path
                                     d="M13.177 6.32155L8.17701 11.3215C8.1538 11.3448 8.12622 11.3632 8.09587 11.3758C8.06553 11.3884 8.03299 11.3949 8.00014 11.3949C7.96729 11.3949 7.93475 11.3884 7.9044 11.3758C7.87405 11.3632 7.84648 11.3448 7.82326 11.3215L2.82326 6.32155C2.80004 6.29832 2.78161 6.27074 2.76904 6.24039C2.75647 6.21005 2.75 6.17752 2.75 6.14467C2.75 6.11182 2.75647 6.07929 2.76904 6.04895C2.78161 6.0186 2.80004 5.99102 2.82326 5.9678C2.87017 5.92089 2.9338 5.89453 3.00014 5.89453C3.03299 5.89453 3.06551 5.901 3.09586 5.91357C3.12621 5.92614 3.15379 5.94457 3.17701 5.9678L8.00014 10.7909L12.8233 5.9678C12.8465 5.94457 12.8741 5.92614 12.9044 5.91357C12.9348 5.901 12.9673 5.89453 13.0001 5.89453C13.033 5.89453 13.0655 5.901 13.0959 5.91357C13.1262 5.92614 13.1538 5.94457 13.177 5.9678C13.2002 5.99102 13.2187 6.0186 13.2312 6.04895C13.2438 6.07929 13.2503 6.11182 13.2503 6.14467C13.2503 6.17752 13.2438 6.21005 13.2312 6.24039C13.2187 6.27074 13.2002 6.29832 13.177 6.32155Z"
                                     fill="#FDE614" />
@@ -379,19 +434,21 @@
             </div>
             <div class="footer-form">
                 <h2>Замовте консультацію інженера</h2>
-                <form action="">
+                <form action="" id="#ajax-contact-form3">
                     <label for="steps-name">Ваше ім'я</label>
                     <div class="form-input">
-                        <input type="text" id="steps-name" placeholder="Наприклад: Григорій Сковорода" required />
+                        <input type="text" id="steps-name" name="name" placeholder="Наприклад: Григорій Сковорода"
+                            required />
                         <img src="img/form-name.svg" alt="Ваше ім'я">
                     </div>
                     <label for="steps-tel">Ваш телефон</label>
                     <div class="form-input">
-                        <input type="text" id="steps-tel" placeholder="+38 (ХХХ) ХХХ - ХХ - ХХ" required />
+                        <input type="tel" id="steps-tel" name="phone" placeholder="+38 (ХХХ) ХХХ - ХХ - ХХ" required />
                         <img src="img/form-tel.svg" alt="Ваш телефон">
                     </div>
+                    <input name="url" type="hidden">
                     <div class="form-input-submit">
-                        <input type="submit" value="Замовити консультацію">
+                        <input type="submit" value="Замовити консультацію" name="submit">
                         <img src="img/input-submit.svg" alt="submit">
                     </div>
                 </form>
@@ -430,83 +487,117 @@
     <script src="script/certificates-slider.js"></script>
     <script src="script/feedback-slider.js"></script> -->
 
-   
-    
+
+
 
     <script>
-        $(document).ready(function() {
-          $('.burger-icon').click(function() {
-            $(this).toggleClass('open');
-            $('.burger-menu').toggleClass('open');
-            $('.body').toggleClass('open');
-            $('.sub-menu').removeClass('open');
-          });
-        
-          $('.submenu-trigger').click(function() {
-            $('.sub-menu3').toggleClass('open');
-          });
-          $('.submenu-trigger2').click(function() {
-            $('.sub-menu2').toggleClass('open');
-          });
-          $('.submenu-trigger2').click(function() {
-            $('.body').toggleClass('open');
-          });
-        
-          $('.close-submenu').click(function() {
-            $('.sub-menu3').removeClass('open');
-          });
-        
-          $('.modal-img2').click(function() {
-            $('.body').removeClass('open');
-          });
-          $('.modal-img2').click(function() {
-            $('.sub-menu2').removeClass('open');
-          });
-        
-          $('.btn-link').click(function() {
-            $('.burger-menu').removeClass('open');
-            $('.burger-icon').removeClass('open');
-            $('.body').removeClass('open');
-            $('.sub-menu').removeClass('open');
-          });
+        $(document).ready(function () {
+            $('.burger-icon').click(function () {
+                $(this).toggleClass('open');
+                $('.burger-menu').toggleClass('open');
+                $('.body').toggleClass('open');
+                $('.sub-menu').removeClass('open');
+            });
+
+            $('.submenu-trigger').click(function () {
+                $('.sub-menu3').toggleClass('open');
+            });
+            $('.submenu-trigger2').click(function () {
+                $('.sub-menu2').toggleClass('open');
+            });
+            $('.submenu-trigger2').click(function () {
+                $('.body').toggleClass('open');
+            });
+
+            $('.close-submenu').click(function () {
+                $('.sub-menu3').removeClass('open');
+            });
+
+            $('.modal-img2').click(function () {
+                $('.body').removeClass('open');
+            });
+            $('.modal-img2').click(function () {
+                $('.sub-menu2').removeClass('open');
+            });
+
+            $('.btn-link').click(function () {
+                $('.burger-menu').removeClass('open');
+                $('.burger-icon').removeClass('open');
+                $('.body').removeClass('open');
+                $('.sub-menu').removeClass('open');
+            });
         });
-        
-            </script>
-        
-        <script>
-            const submenuTrigger = document.querySelector('.submenu-trigger');
-            const closeSubmenuHeader = document.querySelector('.close-submenu-header');
-            const burgerIcon = document.querySelector('.burger-icon');
-            const headerImages = document.querySelectorAll('.header-logo-none');
-            const burgerIcon2 = document.querySelector('.header-logo-mob');
-            const subMenu = document.querySelector('.sub-menu');
-        
-            submenuTrigger.addEventListener('click', () => {
-              headerImages.forEach(img => {
+
+    </script>
+
+    <script>
+        const submenuTrigger = document.querySelector('.submenu-trigger');
+        const closeSubmenuHeader = document.querySelector('.close-submenu-header');
+        const burgerIcon = document.querySelector('.burger-icon');
+        const headerImages = document.querySelectorAll('.header-logo-none');
+        const burgerIcon2 = document.querySelector('.header-logo-mob');
+        const subMenu = document.querySelector('.sub-menu');
+
+        submenuTrigger.addEventListener('click', () => {
+            headerImages.forEach(img => {
                 img.style.display = 'none';
-              });
-              closeSubmenuHeader.style.display = 'block';
             });
-          
-            closeSubmenuHeader.addEventListener('click', () => {
-              headerImages.forEach(img => {
+            closeSubmenuHeader.style.display = 'block';
+        });
+
+        closeSubmenuHeader.addEventListener('click', () => {
+            headerImages.forEach(img => {
                 burgerIcon2.style.display = 'block';
-              });
-              closeSubmenuHeader.style.display = 'none';
             });
-          
-            burgerIcon.addEventListener('click', () => {
-              if (subMenu.classList.contains('open')) {
+            closeSubmenuHeader.style.display = 'none';
+        });
+
+        burgerIcon.addEventListener('click', () => {
+            if (subMenu.classList.contains('open')) {
                 if (burgerIcon.classList.contains('open')) {
-                  burgerIcon2.style.display = 'block';
-                  closeSubmenuHeader.style.display = 'none';
+                    burgerIcon2.style.display = 'block';
+                    closeSubmenuHeader.style.display = 'none';
                 } else {
-                  burgerIcon2.style.display = 'none';
-                  closeSubmenuHeader.style.display = 'none';
+                    burgerIcon2.style.display = 'none';
+                    closeSubmenuHeader.style.display = 'none';
                 }
-              }
+            }
+        });
+    </script>
+    <script>
+        const consultationBtns = document.querySelectorAll('.consultation-btn');
+        const modalConsultation = document.querySelector('.modal-consultation');
+        const modalCloseBtn = document.querySelector('.burger-icon');
+
+        consultationBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                modalConsultation.classList.add('open');
             });
-        </script>
+        });
+
+        modalCloseBtn.addEventListener('click', () => {
+            modalConsultation.classList.remove('open');
+        });
+    </script>
+
+    <script>
+        const consultationBtns2 = document.querySelectorAll('.consultation-btn2');
+        const body1 = document.querySelectorAll('.body');
+        const modalConsultation2 = document.querySelector('.modal-consultation2');
+        const modalCloseBtn2 = modalConsultation2.querySelector('.modal-consultation-close');
+
+        consultationBtns2.forEach(btn => {
+            btn.addEventListener('click', () => {
+                modalConsultation2.classList.add('open');
+                body1.classList.add('open');
+            });
+        });
+
+        modalCloseBtn2.addEventListener('click', () => {
+            modalConsultation2.classList.remove('open');
+            body1.classList.remove('open');
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,46 @@
+.progectModal.fancybox-content {
+	max-width: 1116px;
+	padding: 32px 59px;
+}
+
+.progectModal img {
+    max-width: 100%;
+}
+
+.TitleProgectModal {
+	overflow: hidden;
+	color: #282828;
+	text-overflow: ellipsis;
+	font-family: Open Sans;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+}
+
+.topProgectModal {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.progectModalInner .case-box-item-block2 {
+	margin-bottom: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
