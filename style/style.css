@@ -5084,6 +5084,7 @@ text-align: left;
     .certificates-slider {
         flex-direction: row;
         flex-wrap: nowrap;
+        gap: 0;
     }
     .certificates-item {
         display: flex;
@@ -5228,7 +5229,7 @@ text-align: left;
     }
     .certificates-pagination {
         display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     }
     .feedback-box-btn {
         display: none;
@@ -5586,7 +5587,7 @@ line-height: 150%; /* 24px */
     z-index: 5;
     margin-top: 6px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     }
     .feedback {
         padding-bottom: 12px;
@@ -6210,7 +6211,7 @@ flex: 1 0 0;
         padding: 12px 24px;
     }
     .feedback-hero > img {
-        object-fit: cover;
+        object-fit: fill;
         width: 100%;
         height: 105px;
     }
@@ -6228,6 +6229,40 @@ flex: 1 0 0;
         z-index: 222222;
         top: 0;
         position: fixed;
+    }
+    .feedback-box {
+        gap: 0;
+    }
+    .feedback-item {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        width: 256px;
+    }
+    .certificates-item {
+        width: auto;
+        min-width: auto;
+        max-width: max-content;
+        flex: none;
+    }
+    .certificates-slider {
+        width: auto;
+    }
+    .feedback {
+        padding-bottom: 103px !important;
+    }
+    .feedback-pagination {
+        position: absolute;
+        bottom: 63px !important;
+    }
+    .feedback-box {
+        width: auto;
+    }
+    .certificates-tittle .about-us-left-tittle-logo-img > img {
+        object-position: right;
+    }
+    .case-left-tittle-img > img {
+        object-position: right !important;
     }
 }
 @media (max-width: 768px) {
