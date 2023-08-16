@@ -7462,4 +7462,10 @@ footer {
         padding-left: 32px;
         box-sizing: border-box;
     }
+    .feedback-box {
+        width: 100%;
+    }
+    .feedback-pagination  {
+        
+    }
 }
