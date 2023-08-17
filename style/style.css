@@ -292,20 +292,28 @@ header .wrapper .header-navs li {
     text-transform: uppercase;
     border-bottom: 1px solid #FAF3DE;
 }
+.adress-line > a {
+    color:#282828;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
 
 .drop-down-menu ul li img {
     width: 18px;
     height: 18px;
 }
 
-.drop-down-menu ul li:nth-of-type(1) {
+.drop-down-menu ul li:nth-of-type(1) a {
     color: #5E5E5E;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
     display: flex;
-    padding: 8px 16px;
+    padding: 8px 16px 8px 0;
     align-items: center;
     gap: 8px;
     align-self: stretch;
@@ -365,7 +373,8 @@ header .wrapper .header-navs li {
 .adress-line {
     display: flex;
     gap: 16px;
-    height: 53px;
+    height: 38px;
+    align-items: center;
 }
 
 .social-network {
@@ -1406,7 +1415,8 @@ form label {
 }
 
 .steps-right-column-box-emodji1 {
-    text-shadow: 0px 0px 25px #F90400;
+    box-shadow: 0px 0px 25px #F90400;
+    background: rgba(249, 4, 0, 0.3);
 }
 
 .steps-right-column-box-text {
@@ -1446,11 +1456,14 @@ form label {
 }
 
 .steps-right-column-box-emodji2 {
-    text-shadow: 0px 0px 25px #3261CC;
+    box-shadow: 0px 0px 25px #3261CC;
+    background: rgba(50, 97, 204, 0.3);
+    border-radius: 50%;
 }
 
 .steps-right-column-box-emodji3 {
-    text-shadow: 0px 0px 25px rgba(255, 169, 0, 0.75);
+    box-shadow: 0px 0px 25px rgba(255, 169, 0, 1);
+    background: rgba(255, 169, 0, 0.3);
 }
 
 .steps-right-column-box-img {
@@ -1466,11 +1479,13 @@ form label {
 }
 
 .steps-right-column-box-emodji4 {
-    text-shadow: 0px 0px 25px #FF9A9A;
+    box-shadow: 0px 0px 25px #FF9A9A;
+    background: rgba(255, 154, 154, 0.3);
 }
 
 .steps-right-column-box-emodji5 {
-    text-shadow: 0px 0px 25px rgba(4, 189, 25, 0.50);
+    box-shadow: 0px 0px 25px rgba(4, 189, 25, 1);
+    background: rgba(4, 189, 25, 0.3);
 }
 
 .steps-right-column-box-emodji6 {
@@ -1572,6 +1587,7 @@ form label {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    margin-bottom: 96px;
 }
 
 .request-left-box {
@@ -2320,7 +2336,8 @@ form label {
 }
 
 .argument-emodji1 {
-    text-shadow: 0px 0px 25px rgba(255, 169, 0, 1);
+    box-shadow: 0px 0px 25px rgba(255, 169, 0, 1);
+    background: rgba(255, 169, 0, 0.3);
 }
 
 .argument-tittle {
@@ -2332,10 +2349,21 @@ form label {
     position: relative;
     z-index: 5;
 }
-
+.novalid {
+    border: 2px solid #DE350B !important;
+}
+.valid {
+    border-radius: 16px;
+    border: 2px solid #DDD;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
 .argument-box-right-container-img {
     padding: 0;
     overflow: hidden;
+}
+.argument-box-right-container-img picture {
+    height: 100%;
 }
 
 .argument-box-right-container-img img {
@@ -2345,23 +2373,27 @@ form label {
 }
 
 .argument-emodji2 {
-    text-shadow: 0px 0px 25px rgba(191, 163, 121, 1);
+    box-shadow: 0px 0px 25px rgba(191, 163, 121, 1);
+    background: rgba(191, 163, 121, 0.3);
 }
 
 .argument-emodji3 {
-    text-shadow: 0px 0px 25px rgba(108, 157, 77, 1);
+    box-shadow: 0px 0px 25px rgba(108, 157, 77, 1);
+    background: rgba(108, 157, 77, 0.3);
 }
 
 .argument-emodji4 {
-    text-shadow: 0px 0px 25px rgba(255, 169, 0, 1);
+    box-shadow: 0px 0px 25px rgba(255, 169, 0, 1);
+    background: rgba(255, 169, 0, 0.3);
 }
 
 .argument-emodji5 {
-    text-shadow: 0px 0px 25px rgba(194, 90, 255, 1);
+    box-shadow: 0px 0px 25px rgba(194, 90, 255, 1);
+    background: rgba(194, 90, 255, 0.3);
 }
 
 .argument-emodji6 {
-    text-shadow: 0px 0px 25px #FFA010;
+    box-shadow: 0px 0px 25px #FFA010;
 }
 
 .about-us {
@@ -3633,7 +3665,7 @@ footer {
     transition: all 0.5s;
 }
 
-.footer-content-left-contact-adress p {
+.footer-content-left-contact-adress > a {
     color: #F3F3F3;
     text-align: center;
     font-size: 14px;
@@ -4240,7 +4272,9 @@ footer {
     object-fit: cover;
     object-position: left;
 }
-
+.drop-down-menu {
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.10);
+}
 
 
 
@@ -7124,9 +7158,11 @@ footer {
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 0;
+        padding: 30px 0;
         padding-left: 32px;
         box-sizing: border-box;
     }
+
     .case-box {
         width: 100%;
         box-sizing: border-box;
