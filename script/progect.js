@@ -1,7 +1,8 @@
 jQuery(document).ready(function ($) {
 
     // инициализируем swiper
-    $("#courder").on("click", ".stories-btn", function () {
+    let sliderProgect;
+    $("#courder").on("click", ".stories-btn.modVievLink", function (event) {
         let modalId = $(this).data("src");
         console.log(modalId);
 
@@ -9,7 +10,8 @@ jQuery(document).ready(function ($) {
 
         if (modSlider) {
             console.log("Found modSlider:", modSlider);
-            let swiper = new Swiper(modSlider, {
+            sliderProgect = new Swiper(modSlider, {
+                zoom: true,
                 on: {
                     init: function () {
                         $(modalId + ' .navSlider .nav-slide').eq(0).addClass('active');
@@ -27,14 +29,17 @@ jQuery(document).ready(function ($) {
 
             // кликаем по миниатюре
             $(modalId + ' .navSlider .nav-slide').click(function () {
-                var index = $(this).index();
-                swiper.slideTo(index);
+                let index = $(this).index();
+                sliderProgect.slideTo(index);
             });
 
         } else {
             console.log("modSlider not found");
         }
     });
+
+
+  
 
 
 
@@ -50,6 +55,7 @@ jQuery(document).ready(function ($) {
         for (let i = 0; i < data.length; i++) {
             const item = data[i];
             const firstImage = item.images[0];
+            const firstImageWebp = firstImage.replace(/\.[^.]+$/, ".webp");
             let visible;
             if (i < 3) {
                 visible = "visible";
@@ -58,25 +64,26 @@ jQuery(document).ready(function ($) {
             }
 
             const itemDiv = $('<div class="case-box-slider-item swiper-slide ' + visible + '">');
-            const imageLinks = item.images.map(image => `<img src="${image}" alt="foto">`).join('');
+            
             itemDiv.html(`           
+            <div class="progectSlideInner">
                 <div class="case-box-container">
-
-                    <a data-fancybox data-src="#box-${i}" data-modal="true" href="javascript:;" class="stories-btn"></a>
-
+            
+                    <a data-fancybox data-src="#box-${i}" data-modal="true" href="javascript:;" class="stories-btn modVievLink"></a>
+            
                     <h3>${item.title}</h3>
-
+            
                     <div class="case-box-item-block1">
                         <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item1.svg" alt="${item.city}">
+                            <img src="img/case-box-item1.svg" alt="${item.city}" width="16" height="17">
                             ${item.city}
                         </div>
                         <div class="case-box-item-block1-container">
-                            <img src="img/case-box-item2.svg" alt="${item.category}">
+                            <img src="img/case-box-item2.svg" alt="${item.category}" width="16" height="17">
                             ${item.category}
                         </div>
                     </div>
-
+            
                     <div class="case-box-item-block2">
                         <div class="case-box-item-block2-content">
                             <span>${item.power}</span>
@@ -91,16 +98,20 @@ jQuery(document).ready(function ($) {
                             <p>Економія/рік</p>
                         </div>
                     </div>
-
+            
                     <div class="case-box-slider-item-img">
-                        <img src="${firstImage}" alt="${item.title}">
+                        <picture>
+                            <source srcset="${firstImageWebp}" type="image/webp">
+                            <img loading="lazy"  width="308" height="215" src="${firstImage}" alt="${item.title}">
+                        </picture>
                         <div class="case-box-slider-item-img-text">
-                            <a data-fancybox data-src="#box-${i}" data-modal="false" href="javascript:;" class="stories-btn">ще фото</a>
-                            <img src="img/foto-modal.svg" alt="foto">
+                            <a class="stories-btn">ще фото</a>
+                            <img src="img/foto-modal.svg" alt="foto" width="24" height="25">
                         </div>
-                    </div>          
-
+                    </div>
+            
                 </div>
+            </div>
 
 
                 
@@ -163,8 +174,37 @@ jQuery(document).ready(function ($) {
             const item = data[i];
 
             const itemDiv = $('<div id="box-' + i + '" style="display:none;" class="progectModal">');
-            const imageLinks = item.images.map(image => `<div class="swiper-slide"><img src="${image}" alt="Сонячні станції"></div>`).join('');
-            const imageNav = item.images.map(image => `<div class="nav-slide"><img src="${image}" alt="Сонячні станції"></div>`).join('');
+
+            //const imageLinks = item.images.map(image => `<div class="swiper-slide"><img src="${image}" alt="Сонячні станції"></div>`).join('');
+            const pictureTags = item.images.map(image => {
+                const imageFileName = image.split('.').slice(0, -1).join('.'); // Remove the file extension
+                const webpImage = `${imageFileName}.webp`;
+                return `
+                <div class="swiper-slide">
+                  <picture>
+                    <source srcset="${webpImage}" type="image/webp">
+                    <img class="sunSlide" src="${image}" alt="${item.title}" width="998" height="445">
+                  </picture>
+                  </div>
+                `;
+            }).join('');
+
+
+            // const imageNav = item.images.map(image => `<div class="nav-slide"><img src="${image}" alt="Сонячні станції"  width="71" height="56"></div>`).join('');
+            const imageNav = item.images.map(image => {
+                const imageFileName = image.split('.').slice(0, -1).join('.'); // Remove the file extension
+                const webpImage = `${imageFileName}.webp`;
+                return `
+                <div class="nav-slide">
+                  <picture>
+                    <source srcset="${webpImage}" type="image/webp">
+                    <img src="${image}" alt="${item.title}" width="71" height="56">
+                  </picture>
+                  </div>
+                `;
+            }).join('');
+
+
             const countImages = item.images.length;
             const imageNavElement = countImages > 1 ? `<div class="navSlider">${imageNav}</div>` : '';
 
@@ -178,11 +218,11 @@ jQuery(document).ready(function ($) {
                             <div class="labelModal">
                                 <div class="case-box-item-block1">
                                     <div class="case-box-item-block1-container">
-                                       <img src="img/case-box-item1.svg" alt="${item.city}">
+                                       <img src="img/case-box-item1.svg" alt="${item.city}" width="16" height="17">
                                        ${item.city}
                                     </div>
                                     <div class="case-box-item-block1-container">
-                                        <img src="img/case-box-item2.svg" alt="${item.category}">
+                                        <img src="img/case-box-item2.svg" alt="${item.category}" width="16" height="17">
                                         ${item.category}
                                     </div>
                                 </div>
@@ -206,11 +246,11 @@ jQuery(document).ready(function ($) {
                         </div>
                         <div class="innerSliderProgect">
                             <div class="modSlider swiper ">
-                                <div class="swiper-wrapper">${imageLinks}</div>   
+                                <div class="swiper-wrapper">${pictureTags}</div>   
                             </div>
 
-                            <div class="progect-next"><img src="img/progect-next.svg" alt="next"></div>
-                            <div class="progect-prev"><img src="img/progect-prev.svg" alt="prev"></div>
+                            <div class="progect-next"><img src="img/progect-next.svg" alt="next" width="24" height="25"></div>
+                            <div class="progect-prev"><img src="img/progect-prev.svg" alt="prev" width="24" height="25"></div>
                         </div>
 
                         ${imageNavElement}
@@ -218,10 +258,7 @@ jQuery(document).ready(function ($) {
                         <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small close" title="Close"><svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg></button>
 
 
-                    </div><!-- //progectModalInner --> 
-
-
-                
+                    </div><!-- //progectModalInner -->                 
 
             `);
             modalProgect.append(itemDiv);
