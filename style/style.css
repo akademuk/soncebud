@@ -1464,6 +1464,7 @@ form label {
 .steps-right-column-box-emodji3 {
     box-shadow: 0px 0px 25px rgba(255, 169, 0, 1);
     background: rgba(255, 169, 0, 0.3);
+    border-radius: 50%;
 }
 
 .steps-right-column-box-img {
@@ -1481,11 +1482,13 @@ form label {
 .steps-right-column-box-emodji4 {
     box-shadow: 0px 0px 25px #FF9A9A;
     background: rgba(255, 154, 154, 0.3);
+    border-radius: 50%;
 }
 
 .steps-right-column-box-emodji5 {
     box-shadow: 0px 0px 25px rgba(4, 189, 25, 1);
     background: rgba(4, 189, 25, 0.3);
+    border-radius: 50%;
 }
 
 .steps-right-column-box-emodji6 {
